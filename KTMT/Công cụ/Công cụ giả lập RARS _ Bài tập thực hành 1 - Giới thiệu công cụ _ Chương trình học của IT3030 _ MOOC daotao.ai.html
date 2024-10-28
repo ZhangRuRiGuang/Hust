@@ -1,0 +1,2261 @@
+<!DOCTYPE html>
+<!-- saved from url=(0139)https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/courseware/10c334ac26b94d0e84eaf84fe2bd826f/cffa093ccd364107b3af0b2c1b4a8a85/ -->
+<html lang="vi"><!--<![endif]--><head dir="ltr"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="origin-trial" content="A/kargTFyk8MR5ueravczef/wIlTkbVk1qXQesp39nV+xNECPdLBVeYffxrM8TmZT6RArWGQVCJ0LRivD7glcAUAAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZzIiLCJleHBpcnkiOjE3NDIzNDIzOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="crossorigin">
+    <link href="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/css2" rel="stylesheet">
+    <link href="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/icon" rel="stylesheet">
+    <link href="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/icon(1)" rel="stylesheet">
+    <link href="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/slick.min.css" rel="stylesheet">
+    <link href="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/slick-theme.min.css" rel="stylesheet">
+    <link href="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://soict.daotao.ai/static/MOOC_Study/images/favicon.12035673d43a.png">
+    <script type="text/javascript" async="" charset="utf-8" src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/recaptcha__vi.js.tải xuống" crossorigin="anonymous" integrity="sha384-q0ik326Zm6Jt15ASfVuGOqCAcgeINNtwX8h3fC49XNm1KEAMzT+3P/mbMDx7Q/36"></script><script src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/api.js.tải xuống"></script>
+
+
+  
+<title data-base-title="
+ Bài tập thực hành 1 - Giới thiệu công cụ | Chương trình học của IT3030  | MOOC daotao.ai">Công cụ giả lập RARS | Bài tập thực hành 1 - Giới thiệu công cụ | Chương trình học của IT3030  | MOOC daotao.ai</title>
+
+
+      <script type="text/javascript">
+        /* immediately break out of an iframe if coming from the marketing website */
+        (function(window) {
+          if (window.location !== window.top.location) {
+            window.top.location = window.location;
+          }
+        })(this);
+      </script>
+
+  
+
+  <script type="text/javascript" src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/djangojs.240f9cbc6215.js.tải xuống"></script>
+  <script type="text/javascript" src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/ie11_find_array.bd1c6dc7a133.js.tải xuống"></script>
+
+  
+  
+
+    <link href="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/lms-style-vendor.68e48093f5dd.css" rel="stylesheet" type="text/css">
+
+
+
+    
+  
+
+    <link href="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/lms-main-v1.dfa2a526fec7.css" rel="stylesheet" type="text/css">
+
+
+
+
+    
+    
+<script type="text/javascript" src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/lms-main_vendor.3c3c9a2604d6.js.tải xuống" charset="utf-8"></script>
+
+
+    
+    
+<script type="text/javascript" src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/lms-application.0e3fae472a20.js.tải xuống" charset="utf-8"></script>
+
+
+
+  
+    
+    
+    <script type="text/javascript" src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/commons.39c41d93ac5964183d45.c8d3a607aafa.js.tải xuống"></script>
+
+
+
+  <script>
+    window.baseUrl = "/static/";
+    (function (require) {
+      require.config({
+          baseUrl: window.baseUrl
+      });
+    }).call(this, require || RequireJS.require);
+  </script>
+  <script type="text/javascript" src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/require-config.38226099c6ad.js.tải xuống"></script>
+  
+    <script type="text/javascript">
+        (function (require) {
+          require.config({
+              paths: {
+                'course_bookmarks/js/views/bookmark_button': 'course_bookmarks/js/views/bookmark_button.d4cfaf3361fa',
+'js/views/message_banner': 'js/views/message_banner.91290dbe25ba',
+'moment': 'common/js/vendor/moment-with-locales.43ec67e44612',
+'moment-timezone': 'common/js/vendor/moment-timezone-with-data.60142e6c4416',
+'js/courseware/course_info_events': 'js/courseware/course_info_events.2fc35b57627f',
+'js/courseware/accordion_events': 'js/courseware/accordion_events.6064c7809de5',
+'js/dateutil_factory': 'js/dateutil_factory.84670a6ecfae',
+'js/courseware/link_clicked_events': 'js/courseware/link_clicked_events',
+'js/courseware/toggle_element_visibility': 'js/courseware/toggle_element_visibility.d5f10bc65ed0',
+'js/student_account/logistration_factory': 'js/student_account/logistration_factory.1c329dcf5a19',
+'js/courseware/courseware_factory': 'js/courseware/courseware_factory.1504fc10caef',
+'js/groups/views/cohorts_dashboard_factory': 'js/groups/views/cohorts_dashboard_factory.ca68388d81d6',
+'js/groups/discussions_management/discussions_dashboard_factory': 'js/discussions_management/views/discussions_dashboard_factory.2e10d9097343',
+'draggabilly': 'js/vendor/draggabilly.26caba6f7187',
+'hls': 'common/js/vendor/hls.8f15a0109b05'
+            }
+          });
+        }).call(this, require || RequireJS.require);
+    </script>
+  
+
+  
+
+  
+
+    <link href="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/lms-style-course-vendor.730dda42e3c1.css" rel="stylesheet" type="text/css">
+
+
+
+
+  
+
+    <link href="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/lms-course.641a51c06aa1.css" rel="stylesheet" type="text/css">
+
+
+
+
+<script type="text/javascript" src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/jquery.autocomplete.3bd10d7510d2.js.tải xuống"></script>
+<script type="text/javascript" src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/tooltip_manager.b8fa94d4cefc.js.tải xuống"></script>
+
+<link href="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/jquery.autocomplete.896181d3ec33.css" rel="stylesheet" type="text/css">
+  
+
+  
+
+  
+
+
+  
+
+
+<script type="application/json" id="user-metadata">
+    {"username": "20193237", "user_id": 22162, "course_id": "course-v1:SoICT+IT3030+2020-2", "enrollment_mode": "audit", "upgrade_link": null, "upgrade_price": "Free", "audit_access_deadline": null, "course_duration": null, "pacing_type": "instructor_paced", "has_staff_access": false, "forum_roles": [["Student"]], "partition_groups": {"Nh\u00f3m Ch\u01b0\u01a1ng tr\u00ecnh Tuy\u1ec3n sinh": [1, "Audit"]}, "has_non_audit_enrollments": false, "program_key_fields": null, "email": "quang.tnn193237@sis.hust.edu.vn", "schedule_start": null, "enrollment_time": "2024-09-16T09:42:46.997811+00:00", "course_start": "2024-09-09T00:00:00+00:00", "course_end": "2025-02-08T00:00:00+00:00", "dynamic_upgrade_deadline": null, "course_upgrade_deadline": null, "course_key_fields": {"org": "SoICT", "course": "IT3030", "run": "2020-2"}}
+</script>
+
+  
+
+  
+
+
+  
+
+
+<!-- dummy Segment -->
+<script type="text/javascript">
+  var analytics = {
+    track: function() { return; },
+    trackLink: function() { return; },
+    pageview: function() { return; },
+    page: function() { return; }
+  };
+</script>
+<!-- end dummy Segment -->
+
+
+  <meta name="path_prefix" content="">
+  
+
+  <meta name="openedx-release-line" content="koa">
+
+
+
+
+
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="/static/js/commerce/track_ecommerce_events.0a92c313c996.js?raw" src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/track_ecommerce_events.0a92c313c996.js.tải xuống"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="/static/js/dateutil_factory.84670a6ecfae.js?raw" src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/dateutil_factory.84670a6ecfae.js.tải xuống"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="js/commerce/track_ecommerce_events" src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/track_ecommerce_events.js.tải xuống"></script><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover, .MJXp-munder {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > *, .MJXp-munder > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+
+<body class="ltr view-in-course view-courseware courseware  lang_vi"><div id="MathJax_Message" style="display: none;"></div>
+
+
+<div id="page-prompt"></div>
+  <div class="window-wrap" dir="ltr">
+    
+    <a class="nav-skip sr-only sr-only-focusable" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/courseware/10c334ac26b94d0e84eaf84fe2bd826f/cffa093ccd364107b3af0b2c1b4a8a85/#main">Vào thẳng nội dung chính</a>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="global-header slim">
+    <div class="main-header">
+        
+
+
+
+
+
+
+
+<h1 class="header-logo">
+    <a>
+      
+        <img class="logo" src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/logo.f0b087adfa7e.svg" alt="Trang chủ MOOC daotao.ai">
+      
+    </a>
+    <div class="course-header" style="display:none;">
+      <span class="provider">SoICT:</span>
+      <span class="course-number">IT3030</span>
+      
+      <span class="course-name">IT3030-Kiến trúc máy tính</span>
+    </div>
+</h1>
+
+        <div class="hamburger-menu" role="button" aria-label="Options" menu="" aria-expanded="false" aria-controls="mobile-menu" tabindex="0">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+            
+
+
+
+
+
+
+
+
+<div class="nav-links">
+  <div class="main">
+    <div class="mobile-nav-item hidden-mobile nav-item nav-tab">
+    </div>
+  </div>
+  <div class="secondary">
+    <div class="mobile-nav-item hidden-mobile nav-item nav-tab">
+      <a class="header__control-course tab-nav-link" href="https://soict.daotao.ai/dashboard" aria-current="false">
+            <!-- <span class="material-icons-outlined">menu_book</span> -->
+            <span class="text">Khóa học của tôi</span>
+      </a>
+    </div>
+    
+
+
+
+
+
+
+<div class="nav-item hidden-mobile toggle-user-dropdown" role="button" aria-label="Options" menu="" aria-expanded="false" tabindex="0" aria-controls="user-menu">
+    <div class="menu-title">
+        <img data-hj-suppress="" class="user-image-frame" src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/default_50.f77efc971b69.png" alt="">
+        <!-- <span class="sr-only">Bảng thông tin của:</span>
+        <span data-hj-suppress class="username">20193237</span> -->
+    </div>
+</div>
+<div class="nav-item hidden-mobile nav-item-dropdown" tabindex="-1">
+    <!-- <div class="toggle-user-dropdown" role="button" aria-label=Options Menu aria-expanded="false" tabindex="0" aria-controls="user-menu">
+        <span class="fa fa-caret-down" aria-hidden="true"></span>
+    </div> -->
+    <div class="dropdown-user-menu hidden" aria-label="Lựa" chọn="" khác="" role="menu" id="user-menu" tabindex="-1">
+            <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="http://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@problem+block@6af228595d87422a8d6db225c5a00519" role="menuitem">Tiếp tục khóa học của bạn</a></div>
+            <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="https://soict.daotao.ai/dashboard" role="menuitem">Bảng thông tin</a></div>
+
+        <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="https://soict.daotao.ai/u/20193237" role="menuitem">Hồ sơ</a></div>
+        <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="https://soict.daotao.ai/account/settings" role="menuitem">Tài khoản</a></div>
+        <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="https://soict.daotao.ai/logout" role="menuitem">Đăng xuất</a></div>
+    </div>
+</div>
+
+  </div>
+</div>
+
+    </div>
+    <div class="mobile-menu hidden" aria-label="Lựa" chọn="" khác="" role="menu" id="mobile-menu"><div class="mobile-nav-item hidden-mobile nav-item nav-tab mobile-nav-link">
+    </div><div class="mobile-nav-item hidden-mobile nav-item nav-tab mobile-nav-link">
+      <a class="header__control-course tab-nav-link" href="https://soict.daotao.ai/dashboard" aria-current="false" role="menuitem">
+            <!-- <span class="material-icons-outlined">menu_book</span> -->
+            <span class="text">Khóa học của tôi</span>
+      </a>
+    </div><div class="mobile-nav-item dropdown-item dropdown-nav-item mobile-nav-link"><a href="http://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@problem+block@6af228595d87422a8d6db225c5a00519" role="menuitem">Tiếp tục khóa học của bạn</a></div><div class="mobile-nav-item dropdown-item dropdown-nav-item mobile-nav-link"><a href="https://soict.daotao.ai/dashboard" role="menuitem">Bảng thông tin</a></div><div class="mobile-nav-item dropdown-item dropdown-nav-item mobile-nav-link"><a href="https://soict.daotao.ai/u/20193237" role="menuitem">Hồ sơ</a></div><div class="mobile-nav-item dropdown-item dropdown-nav-item mobile-nav-link"><a href="https://soict.daotao.ai/account/settings" role="menuitem">Tài khoản</a></div><div class="mobile-nav-item dropdown-item dropdown-nav-item mobile-nav-link"><a href="https://soict.daotao.ai/logout" role="menuitem">Đăng xuất</a></div></div>
+</header>
+
+<!--[if lte IE 9]>
+<div class="ie-banner" aria-hidden="true"><strong>Cảnh báo:</strong> Trình duyệt của bạn không được hỗ trợ đầy đủ. Chúng tôi khuyên bạn nên sử dụng <a href="https://www.google.com/chrome" rel="noopener" target="_blank">Chrome</a> hoặc <a href="http://www.mozilla.org/firefox" rel="noopener" target="_blank">Firefox</a>.</div>
+<![endif]-->
+
+
+
+        
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    <div class="marketing-hero"></div>
+
+    <div class="content-wrapper main-container" id="content" dir="ltr">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/template" id="image-modal-tpl">
+    <div class="wrapper-modal wrapper-modal-image">
+  <section class="image-link">
+    <%= smallHTML%> <% // xss-lint: disable=underscore-not-escaped %>
+    <a href="#" class="modal-ui-icon action-fullscreen" role="button">
+      <span class="label">
+        <span class="icon fa fa-arrows-alt fa-large" aria-hidden="true"></span> <%- gettext("Fullscreen") %>
+      </span>
+    </a>
+  </section>
+
+  <section class="image-modal">
+    <section class="image-content">
+      <div class="image-wrapper">
+        <img alt="<%- largeALT %>, <%- gettext('Large') %>" src="<%- largeSRC %>" />
+      </div>
+
+      <a href="#" class="modal-ui-icon action-close" role="button">
+        <span class="label">
+          <span class="icon fa fa-remove fa-large" aria-hidden="true"></span> <%- gettext("Close") %>
+        </span>
+      </a>
+
+      <ul class="image-controls">
+        <li class="image-control">
+          <a href="#" class="modal-ui-icon action-zoom-in" role="button">
+            <span class="label">
+              <span class="icon fa fa fa-search-plus fa-large" aria-hidden="true"></span> <%- gettext("Zoom In") %>
+            </span>
+          </a>
+        </li>
+
+        <li class="image-control">
+          <a href="#" class="modal-ui-icon action-zoom-out is-disabled" aria-disabled="true" role="button">
+            <span class="label">
+              <span class="icon fa fa fa-search-minus fa-large" aria-hidden="true"></span> <%- gettext("Zoom Out") %>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </section>
+</div>
+
+</script>
+
+
+
+
+
+
+
+
+<div class="message-banner" aria-live="polite"></div>
+
+  
+
+
+
+
+
+
+
+    
+    
+<script type="text/javascript" src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/lms-proctoring.da329f13cb40.js.tải xuống" charset="utf-8"></script>
+
+
+        <script type="text/template" id="proctored-exam-status-tpl">
+            <div class="exam-timer">
+    <%
+        function gtLtEscape(str) {
+            return String(str)
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+        }
+    %>
+    <div id="turn_in_exam_id" class="pull-right turn_in_exam" role="region" aria-label="<%- gettext('Exam timer and end exam button')%>">
+        <span>
+            <% if(attempt_status !== 'ready_to_submit') {%>
+                <button class="exam-button-turn-in-exam btn btn-pl-primary btn-primary">
+                    <%- gettext("End My Exam") %>
+                </button>
+            <% } %>
+        </span>
+        <span class="sr timer-announce" aria-live="assertive"></span>
+        <span class="exam-timer-clock">
+            <h3 id="time_remaining_id">
+                <b>
+                </b>
+            </h3>
+            <button role="button" id="toggle_timer" class="btn btn-primary" aria-label="<%- gettext("Hide Timer") %>" aria-pressed="false">
+                <i class="fa fa-eye-slash" aria-hidden="true"></i>
+            </button>
+        </span>
+    </div>
+    <div class='exam-text js-exam-text' data-show-long="true">
+        <% // xss-lint: disable=underscore-not-escaped %>
+        <%= interpolate_text(gettext('You are taking "{exam_link}" as {exam_type}. '), {exam_link: "<a href='" + exam_url_path + "'>"+gtLtEscape(exam_display_name)+"</a>", exam_type: gettext('a timed exam')}) %>
+        <span class="js-exam-additional-text" aria-hidden="false">
+            <%- gettext('The timer on the right shows the time remaining in the exam.') %>
+            <%- gettext('To receive credit for problems, you must select "Submit" for each problem before you select "End My Exam".') %>
+        </span>
+        <button class="js-toggle-show-more btn btn-link" data-show-more-text="<%- gettext('Show More') %>" data-show-less-text="<%- gettext('Show Less') %>">
+            <%- gettext('Show Less') %>
+        </button>
+    </div>
+</div>
+
+        </script>
+    <div class="proctored_exam_status"></div>
+
+    
+        <nav class="courseware wrapper-course-material" aria-label="Tài liệu khóa học">
+            <div class="course-material">
+                
+                <ol class="tabs course-tabs">
+                    
+
+
+
+
+
+  
+  <li class="tab">
+  <a href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/course/" class="active">
+  Khóa học
+      <span class="sr">, current location</span>
+  </a>
+  </li>
+  
+  <li class="tab">
+  <a href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/progress" class="">
+  Tiến độ học tập
+  </a>
+  </li>
+  
+  <li class="tab">
+  <a href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/discussion/forum/" class="">
+  Thảo luận
+  </a>
+  </li>
+  
+  <li class="tab">
+  <a href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/pdfbook/0/" class="">
+  Slide bài giảng - kiến trúc RISC-V
+  </a>
+  </li>
+
+                    
+                </ol>
+            </div>
+        </nav>
+
+
+<div class="container" lang="vi">
+  <div class="course-wrapper" role="presentation">
+
+    <section class="course-content" id="course-content">
+        <header class="page-header has-secondary">
+            <div class="page-header-main">
+                <nav aria-label="Khóa học" class="sr-is-focusable" tabindex="-1">
+                    <div class="has-breadcrumbs">
+                        <div class="breadcrumbs">
+                            <!-- TODO display pop up -->
+                            <!-- Course outline dropdown -->
+                            
+
+
+<span class="course-dropdown">
+  <button class="course-dropdown__btn btn btn-secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-bars"></span></button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    
+    
+      
+      <li>
+        <a class="dropdown-item">Chương 1: Giới thiệu chung
+            <span class="fa fa-angle-right dropdown-icon" aria-hidden="true"></span>
+        </a>
+          <ul class="dropdown-menu dropdown-submenu">
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@b4c38425d0f745aca887d3539cda2294" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@b4c38425d0f745aca887d3539cda2294">1.1 Máy tính và phân loại máy tính</a></li>
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@5b3bb58eca2a4231a24a0a62c53c42ac" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@5b3bb58eca2a4231a24a0a62c53c42ac">1.2 Kiến trúc máy tính</a></li>
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@850cebfd3bf14e81bf1550a6aaaee8e3" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@850cebfd3bf14e81bf1550a6aaaee8e3">1.3 Sự tiến hóa của công nghệ máy tính</a></li>
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@007b3ab0582f4641a82a5fb019e0a5b5" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@007b3ab0582f4641a82a5fb019e0a5b5">1.4 Hiệu năng máy tính</a></li>
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@36ff0ea0207d4fa688f87da8cbdc68cb" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@36ff0ea0207d4fa688f87da8cbdc68cb">Bài tập chương 1</a></li>
+          </ul>
+      </li>
+      
+      <li>
+        <a class="dropdown-item">Chương 2: Hệ thống máy tính
+            <span class="fa fa-angle-right dropdown-icon" aria-hidden="true"></span>
+        </a>
+          <ul class="dropdown-menu dropdown-submenu">
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@a7384fbb3b6f46dcaeecbe03eb660d96" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@a7384fbb3b6f46dcaeecbe03eb660d96">2.1 Các thành phần cơ bản của máy tính</a></li>
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@368d69188afb40b285c6e29163aa8fa2" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@368d69188afb40b285c6e29163aa8fa2">2.2 Hoạt động cơ bản của máy tính</a></li>
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@a610597f8ce64789940a90a2e6b5f60d" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@a610597f8ce64789940a90a2e6b5f60d">2.3 Liên kết trong máy tính</a></li>
+          </ul>
+      </li>
+      
+      <li>
+        <a class="dropdown-item">Chương 3: Kiến trúc tập lệnh
+            <span class="fa fa-angle-right dropdown-icon" aria-hidden="true"></span>
+        </a>
+          <ul class="dropdown-menu dropdown-submenu">
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@3a723807a4f240489292a5799a21f82e" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@3a723807a4f240489292a5799a21f82e">3.1 Giới thiệu chung</a></li>
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@802a830e004347f7be98b20275936707" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@802a830e004347f7be98b20275936707">3.2 Lệnh hợp ngữ và toán hạng</a></li>
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@cffa093ccd364107b3af0b2c1b4a8a85" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@cffa093ccd364107b3af0b2c1b4a8a85">Bài tập thực hành 1 - Giới thiệu công cụ</a></li>
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@26582b224ad1417d90b0d1296e5f6ce7" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@26582b224ad1417d90b0d1296e5f6ce7">3.3 Các lệnh logic</a></li>
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@4d4c33a69cb34e2593541287a6c71bb7" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@4d4c33a69cb34e2593541287a6c71bb7">Bài tập thực hành 2 - Lệnh số học, logic, load, store</a></li>
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@1816f76ac09e44ba9482b05140cc6c81" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@1816f76ac09e44ba9482b05140cc6c81">3.4 Dịch các câu lệnh điều khiển</a></li>
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@d7af9e12042e4f628e950c2654fc4a62" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@d7af9e12042e4f628e950c2654fc4a62">Bài tập thực hành 3 - Cấu trúc điều khiển trong lập trình</a></li>
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@62e07fa2782f4711b64976a7ee9e2310" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@62e07fa2782f4711b64976a7ee9e2310">3.5 Lập trình mảng dữ liệu</a></li>
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@525b4905a6b841d380ef697e90206205" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@525b4905a6b841d380ef697e90206205">3.6 Chương trình con</a></li>
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@a5f1c3f83525483ca7763da0fb7e9269" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@a5f1c3f83525483ca7763da0fb7e9269">Bài tập thực hành 4 - Mảng, chương trình con</a></li>
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@74eda8dd07d54ca8845851dc7c9aa83b" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@74eda8dd07d54ca8845851dc7c9aa83b">3.7 Mã máy</a></li>
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@4b623f7ba8a842148e22e479c90435b6" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@4b623f7ba8a842148e22e479c90435b6">3.8 Một số lệnh khác</a></li>
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@12bd5936c86d400e94e86d111c124ec8" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@12bd5936c86d400e94e86d111c124ec8">3.9 Các kiến trúc tập lệnh phổ biến (đọc thêm)</a></li>
+          </ul>
+      </li>
+      
+      <li>
+        <a class="dropdown-item">Chương 4: Số học và logic máy tính
+            <span class="fa fa-angle-right dropdown-icon" aria-hidden="true"></span>
+        </a>
+          <ul class="dropdown-menu dropdown-submenu">
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@38530b38eabb4e9ab6bf3ebbaccaa616" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@38530b38eabb4e9ab6bf3ebbaccaa616">4.0 Hệ đếm (tự đọc phụ lục A Cơ bản về logic số)</a></li>
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@64a66727613b489bb7ca88842bb57ae3" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@64a66727613b489bb7ca88842bb57ae3">4.1. Phép cộng và phép trừ số nguyên</a></li>
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@7bc5f9ceac56491581c5b47e26528bb4" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@7bc5f9ceac56491581c5b47e26528bb4">4.2. Phép nhân và phép chia số nguyên</a></li>
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@1b45a418902248fb86da512027d1f167" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@1b45a418902248fb86da512027d1f167">4.3. Số dấu phẩy động</a></li>
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@59ced97454c0407cae74b1308e06b062" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@59ced97454c0407cae74b1308e06b062">Bài tập chương 4</a></li>
+          </ul>
+      </li>
+      
+      <li>
+        <a class="dropdown-item">Chương 5: Bộ xử lý
+            <span class="fa fa-angle-right dropdown-icon" aria-hidden="true"></span>
+        </a>
+          <ul class="dropdown-menu dropdown-submenu">
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@3464413062b14816bb04970f99b46930" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@3464413062b14816bb04970f99b46930">5.1. Giới thiệu chung</a></li>
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@1a66f68f7d834035b92156fefa3c07b4" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@1a66f68f7d834035b92156fefa3c07b4">5.2. Bộ xử lý đơn chu kỳ</a></li>
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@069bebe7434d4c948970b3d5a46d30da" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@069bebe7434d4c948970b3d5a46d30da">5.3. Bộ xử lý đa chu kỳ</a></li>
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@5cac9d368b5c494495f901ad5a161e68" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@5cac9d368b5c494495f901ad5a161e68">5.4. Bộ xử lý đường ống</a></li>
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@f31757e0d512482eba7e5097ec4de45d" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@f31757e0d512482eba7e5097ec4de45d">Bài tập thực hành Chương 5</a></li>
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@9acc0f97cc2f47adb3a29fbf4e6ecf59" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@9acc0f97cc2f47adb3a29fbf4e6ecf59">Bài tập thực hành 5 - pipeline</a></li>
+          </ul>
+      </li>
+      
+      <li>
+        <a class="dropdown-item">Chương 6: Bộ nhớ máy tính
+            <span class="fa fa-angle-right dropdown-icon" aria-hidden="true"></span>
+        </a>
+          <ul class="dropdown-menu dropdown-submenu">
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@0f75a353226e455f9a9f0ff3111c5cf0" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@0f75a353226e455f9a9f0ff3111c5cf0">6.1. Tổng quan hệ thống nhớ</a></li>
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@e58809ad119143ab85622ead35e34a50" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@e58809ad119143ab85622ead35e34a50">6.2. Bộ nhớ chính</a></li>
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@a9b8edc891ce47c68c657a15a2e02368" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@a9b8edc891ce47c68c657a15a2e02368">6.3. Bộ nhớ cache</a></li>
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@9a4b745d009e4249b7650d5064e12eb2" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@9a4b745d009e4249b7650d5064e12eb2">6.4. Bộ nhớ ngoài</a></li>
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@cf4c14337a9f4f02b3ed99340f31e6f8" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@cf4c14337a9f4f02b3ed99340f31e6f8">6.5. Bộ nhớ ảo</a></li>
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@01f1082c1c08428f8439cbbc4945ed98" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@01f1082c1c08428f8439cbbc4945ed98">Bài tập</a></li>
+          </ul>
+      </li>
+      
+      <li>
+        <a class="dropdown-item">Chương 7: Hệ thống vào-ra
+            <span class="fa fa-angle-right dropdown-icon" aria-hidden="true"></span>
+        </a>
+          <ul class="dropdown-menu dropdown-submenu">
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@b22ff8b2baf4468690319fa61cc835af" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@b22ff8b2baf4468690319fa61cc835af">7.1 Tổng quan về hệ thống vào-ra</a></li>
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@69d5decf0d724568ad5ce8f7cb55a534" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@69d5decf0d724568ad5ce8f7cb55a534">7.2 Các phương pháp điều khiển vào-ra</a></li>
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@3aacd1b3b6dc4de0b975e2eebe91c901" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@3aacd1b3b6dc4de0b975e2eebe91c901">7.3 Nối ghép thiết bị ngoại vi</a></li>
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@99423a3721844b068b204c4fb0f6d47f" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@99423a3721844b068b204c4fb0f6d47f">Bài tập thực hành 6 - Vào ra</a></li>
+          </ul>
+      </li>
+      
+      <li>
+        <a class="dropdown-item">Chương 8: Kiến trúc song song
+            <span class="fa fa-angle-right dropdown-icon" aria-hidden="true"></span>
+        </a>
+          <ul class="dropdown-menu dropdown-submenu">
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@06350dc6e66046638337f0d2140a209e" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@06350dc6e66046638337f0d2140a209e">8.1 Phân loại kiến trúc máy tính</a></li>
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@6d837e21e2e3428d8a72d4184adf8f61" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@6d837e21e2e3428d8a72d4184adf8f61">8.2 Đa xử lý dùng chung bộ nhớ</a></li>
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@e432ac48bb5f4ba3a6088207167977e5" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@e432ac48bb5f4ba3a6088207167977e5">8.3 Đa xử lý bộ nhớ phân tán</a></li>
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@9d5cbfa0c9794dc2a57f993534573e2d" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@9d5cbfa0c9794dc2a57f993534573e2d">8.4 GPGPU</a></li>
+          </ul>
+      </li>
+      
+      <li>
+        <a class="dropdown-item">Công cụ hỗ trợ
+            <span class="fa fa-angle-right dropdown-icon" aria-hidden="true"></span>
+        </a>
+          <ul class="dropdown-menu dropdown-submenu">
+              
+              
+              <li class="subsection" random-time="True" data-start-time="2024-09-09 00:00:00+00:00">
+                <a class="dropdown-item" href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/jump_to/block-v1:SoICT+IT3030+2020-2+type@sequential+block@33487a6148a842a48d92c1b9f1578219" id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@33487a6148a842a48d92c1b9f1578219">Công cụ hỗ trợ</a></li>
+          </ul>
+      </li>
+      
+      <li>
+        <a class="dropdown-item">Section
+        </a>
+      </li>
+  </ul>
+</span>
+<script>
+  var lstElementToHide = $("li[random-time='True']");
+  lstElementToHide.each(function(index){
+        var id = $(this).find('a')[0].id
+        var hasShowed = sessionStorage.getItem(id);
+        var timeToShow = sessionStorage.getItem(`time-<built-in function id>`)
+        var willShow = new Date(timeToShow);
+        var now = new Date();
+        if (!hasShowed){
+            var self = this;
+            var time = $(this).attr("data-start-time");
+            var startDate = new Date(time);
+            var differenceValue =(now.getTime() - startDate.getTime()) / 1000;
+            differenceValue /= 60;
+            if (differenceValue >= 0 && differenceValue <= 3){
+                var randomTime =(Math.random() * (3-differenceValue)).toFixed(2,);
+                $(this).hide();
+                setTimeout(() => {
+                    $(self).show();
+                }, parseInt(parseFloat(randomTime)*60)*1000)
+                sessionStorage.setItem(id, true)
+                sessionStorage.setItem(`time-<built-in function id>`, new Date(now.setSeconds(parseInt(parseFloat(randomTime)*60))))
+            }
+        }
+        if(willShow && willShow >= now){
+            $(this).hide();
+            var diffSecond = willShow.getTime() - now.getTime();
+            setTimeout(() => {
+                $(self).show();
+            }, diffSecond)
+        }
+    })
+</script>
+<!-- End course outline dropdown -->
+
+                                <span class="nav-item nav-item-course">
+                                    <a href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/course/">Khóa học</a>
+                                </span>
+                                <span class="icon fa fa-angle-right" aria-hidden="true"></span>
+                                <span class="nav-item nav-item-chapter" data-course-position="3" data-chapter-position="3">
+                                    <a href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/course/#block-v1:SoICT+IT3030+2020-2+type@chapter+block@10c334ac26b94d0e84eaf84fe2bd826f">Chương 3: Kiến trúc tập lệnh</a>
+                                </span>
+                                <span class="icon fa fa-angle-right" aria-hidden="true"></span>
+                                <span class="nav-item nav-item-section">
+                                    <a href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/course/#block-v1:SoICT+IT3030+2020-2+type@sequential+block@cffa093ccd364107b3af0b2c1b4a8a85">Bài tập thực hành 1 - Giới thiệu công cụ</a>
+                                </span>
+                                <span class="icon fa fa-angle-right" aria-hidden="true"></span>
+                            <span class="nav-item nav-item-sequence">Công cụ giả lập RARS</span>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main id="main" tabindex="-1" aria-label="Content">
+
+              
+<div class="xblock xblock-student_view xblock-student_view-sequential xmodule_display xmodule_SequenceModule xblock-initialized" data-course-id="course-v1:SoICT+IT3030+2020-2" data-type="Sequence" data-init="XBlockToXModuleShim" data-runtime-class="LmsRuntime" data-runtime-version="1" data-block-type="sequential" data-usage-id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@cffa093ccd364107b3af0b2c1b4a8a85" data-request-token="63d1e46a945511ef8a3323219c7798f4" data-graded="False" data-has-score="False">
+  
+  
+
+
+<div id="sequence_cffa093ccd364107b3af0b2c1b4a8a85" class="sequence" data-id="block-v1:SoICT+IT3030+2020-2+type@sequential+block@cffa093ccd364107b3af0b2c1b4a8a85" data-position="4" data-ajax-url="/courses/course-v1:SoICT+IT3030+2020-2/xblock/block-v1:SoICT+IT3030+2020-2+type@sequential+block@cffa093ccd364107b3af0b2c1b4a8a85/handler/xmodule_handler" data-next-url="/courses/course-v1:SoICT+IT3030+2020-2/courseware/10c334ac26b94d0e84eaf84fe2bd826f/26582b224ad1417d90b0d1296e5f6ce7/?child=first" data-prev-url="/courses/course-v1:SoICT+IT3030+2020-2/courseware/10c334ac26b94d0e84eaf84fe2bd826f/802a830e004347f7be98b20275936707/?child=last" data-save-position="true" data-show-completion="true">
+
+  <div class="sequence-list-nav">
+    <div class="sequence-nav sequence-nav--full">
+      <nav class="sequence-list-wrapper" aria-label="Trình tự">
+        <ol id="sequence-list" role="tablist">
+          <li role="presentation">
+            <button class="seq_other inactive nav-item tab" role="tab" tabindex="-1" aria-selected="false" aria-expanded="false" aria-controls="seq_content" data-index="0" data-id="block-v1:SoICT+IT3030+2020-2+type@vertical+block@b0a779e0a6dc42cdaa159f7754975634" data-element="1" data-page-title="Lưu ý khi trước khi làm bài thực hành" data-path="Chương 3: Kiến trúc tập lệnh &gt; Bài tập thực hành 1 - Giới thiệu công cụ &gt; Lưu ý khi trước khi làm bài thực hành" data-graded="False" id="tab_0">
+              <span class="icon fa seq_other" aria-hidden="true"></span>
+                <span class="fa fa-check-circle check-circle " style="color:green" aria-hidden="true"></span>
+                  <span class="sr">Đã hoàn tất</span>
+              <span class="fa fa-fw fa-bookmark bookmark-icon is-hidden" aria-hidden="true"></span>
+              <div class="sequence-tooltip sr"><span class="sr">other&nbsp;</span>Lưu ý khi trước khi làm bài thực hành<span class="sr bookmark-icon-sr">&nbsp;</span></div>
+            </button>
+          </li>
+          <li role="presentation">
+            <button class="seq_other nav-item tab active" role="tab" tabindex="0" aria-selected="true" aria-expanded="true" aria-controls="seq_content" data-index="1" data-id="block-v1:SoICT+IT3030+2020-2+type@vertical+block@78d9a03d5f874514a59b8f96587d192c" data-element="2" data-page-title="Công cụ giả lập RARS" data-path="Chương 3: Kiến trúc tập lệnh &gt; Bài tập thực hành 1 - Giới thiệu công cụ &gt; Công cụ giả lập RARS" data-graded="False" id="tab_1">
+              <span class="icon fa seq_other" aria-hidden="true"></span>
+                <span class="fa fa-check-circle check-circle " style="color:green" aria-hidden="true"></span>
+                  <span class="sr">Đã hoàn tất</span>
+              <span class="fa fa-fw fa-bookmark bookmark-icon is-hidden" aria-hidden="true"></span>
+              <div class="sequence-tooltip sr"><span class="sr">other&nbsp;</span>Công cụ giả lập RARS<span class="sr bookmark-icon-sr">&nbsp;</span></div>
+            </button>
+          </li>
+          <li role="presentation">
+            <button class="seq_other inactive nav-item tab" role="tab" tabindex="-1" aria-selected="false" aria-expanded="false" aria-controls="seq_content" data-index="2" data-id="block-v1:SoICT+IT3030+2020-2+type@vertical+block@0ab6e2841f99496085cfc157e1381ba2" data-element="3" data-page-title="Công cụ giả lập RIPES.me" data-path="Chương 3: Kiến trúc tập lệnh &gt; Bài tập thực hành 1 - Giới thiệu công cụ &gt; Công cụ giả lập RIPES.me" data-graded="False" id="tab_2">
+              <span class="icon fa seq_other" aria-hidden="true"></span>
+                <span class="fa fa-check-circle check-circle " style="color:green" aria-hidden="true"></span>
+                  <span class="sr">Đã hoàn tất</span>
+              <span class="fa fa-fw fa-bookmark bookmark-icon is-hidden" aria-hidden="true"></span>
+              <div class="sequence-tooltip sr"><span class="sr">other&nbsp;</span>Công cụ giả lập RIPES.me<span class="sr bookmark-icon-sr">&nbsp;</span></div>
+            </button>
+          </li>
+          <li role="presentation">
+            <button class="seq_problem nav-item tab visited" role="tab" tabindex="-1" aria-selected="false" aria-expanded="false" aria-controls="seq_content" data-index="3" data-id="block-v1:SoICT+IT3030+2020-2+type@vertical+block@13768140916240bcb538284f7a2fa325" data-element="4" data-page-title="Câu hỏi trắc nghiệm" data-path="Chương 3: Kiến trúc tập lệnh &gt; Bài tập thực hành 1 - Giới thiệu công cụ &gt; Câu hỏi trắc nghiệm" data-graded="False" id="tab_3">
+              <span class="icon fa seq_problem" aria-hidden="true"></span>
+                <span class="fa fa-check-circle check-circle" style="color:green" aria-hidden="true"></span>
+                  <span class="sr">Đã hoàn tất</span>
+              <span class="fa fa-fw fa-bookmark bookmark-icon is-hidden" aria-hidden="true"></span>
+              <div class="sequence-tooltip sr"><span class="sr">problem&nbsp;</span>Câu hỏi trắc nghiệm<span class="sr bookmark-icon-sr">&nbsp;</span></div>
+            </button>
+          </li>
+        </ol>
+      </nav>
+    </div>
+    <div class="sequence-nav">
+      <button class="sequence-nav-button button-previous">
+        <span class="icon fa fa-chevron-prev" aria-hidden="true"></span>
+        <span class="sequence-nav-button-label">Trang trước</span>
+      </button>
+      <button class="sequence-nav-button button-next">
+        <span class="sequence-nav-button-label">Trang sau</span>
+        <span class="icon fa fa-chevron-next" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+  <div class="sequence-content-wrapper">
+  <div class="sr-is-focusable" tabindex="-1"></div>
+
+  <div id="seq_contents_0" aria-labelledby="tab_0" aria-hidden="true" class="seq_contents tex2jax_ignore asciimath2jax_ignore">
+    
+&lt;div class="xblock xblock-student_view xblock-student_view-vertical" data-course-id="course-v1:SoICT+IT3030+2020-2" data-init="VerticalStudentView" data-runtime-class="LmsRuntime" data-runtime-version="1" data-block-type="vertical" data-usage-id="block-v1:SoICT+IT3030+2020-2+type@vertical+block@b0a779e0a6dc42cdaa159f7754975634" data-request-token="63d1e46a945511ef8a3323219c7798f4" data-graded="False" data-has-score="False"&gt;
+  
+
+
+
+
+
+  &lt;h2 class="hd hd-2 unit-title"&gt;Lưu ý khi trước khi làm bài thực hành&lt;/h2&gt;
+
+
+  
+
+
+
+&lt;div class="bookmark-button-wrapper"&gt;
+  &lt;button class="btn btn-link bookmark-button "
+    aria-pressed="false"
+    data-bookmark-id="20193237,block-v1:SoICT+IT3030+2020-2+type@vertical+block@b0a779e0a6dc42cdaa159f7754975634"
+    data-bookmarks-api-url="/api/bookmarks/v1/bookmarks/"&gt;
+     &lt;span class="bookmark-text"&gt;Đánh dấu trang này&lt;/span&gt;
+    &lt;/button&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class="vert-mod"&gt;
+    &lt;div class="vert vert-0" data-id="block-v1:SoICT+IT3030+2020-2+type@html+block@ee3f3190de1045b2805438d6ee462ad8"&gt;
+        
+&lt;div class="xblock xblock-student_view xblock-student_view-html xmodule_display xmodule_HtmlBlock" data-course-id="course-v1:SoICT+IT3030+2020-2" data-init="XBlockToXModuleShim" data-runtime-class="LmsRuntime" data-runtime-version="1" data-block-type="html" data-usage-id="block-v1:SoICT+IT3030+2020-2+type@html+block@ee3f3190de1045b2805438d6ee462ad8" data-request-token="63d1e46a945511ef8a3323219c7798f4" data-graded="False" data-has-score="False"&gt;
+  &lt;script type="json/xblock-args" class="xblock-json-init-args"&gt;
+    {"xmodule-type": "HTMLModule"}
+  &lt;/script&gt;
+  &lt;h4&gt;&lt;span style="color: rgb(51, 102, 255);"&gt;&lt;strong&gt;Thực hành để hiểu Kiến trúc máy tính ,&nbsp; không phải để học lập trình hợp ngữ.&lt;/strong&gt;&lt;/span&gt;&lt;/h4&gt;
+&lt;/div&gt;
+
+    &lt;/div&gt;
+    &lt;div class="vert vert-1" data-id="block-v1:SoICT+IT3030+2020-2+type@html+block@513d9fb03e6b4ab494e375de7ec5b23f"&gt;
+        
+&lt;div class="xblock xblock-student_view xblock-student_view-html xmodule_display xmodule_HtmlBlock" data-course-id="course-v1:SoICT+IT3030+2020-2" data-init="XBlockToXModuleShim" data-runtime-class="LmsRuntime" data-runtime-version="1" data-block-type="html" data-usage-id="block-v1:SoICT+IT3030+2020-2+type@html+block@513d9fb03e6b4ab494e375de7ec5b23f" data-request-token="63d1e46a945511ef8a3323219c7798f4" data-graded="False" data-has-score="False"&gt;
+  &lt;script type="json/xblock-args" class="xblock-json-init-args"&gt;
+    {"xmodule-type": "HTMLModule"}
+  &lt;/script&gt;
+  &lt;p&gt;Khi làm đọc các hướng dẫn và làm các bài tập thực hành ở nhà, các sinh viên được khuyên khích&lt;br /&gt;- Chạy &lt;strong&gt;debug từng lệnh&lt;/strong&gt; một để hiểu lệnh.&lt;br /&gt;- Trước khi chạy một lệnh nào đó, hãy&lt;strong&gt; tưởng tượng ra trước kết quả&lt;/strong&gt;, rồi mới chạy debug qua lênh đó. So sánh giữa cái bạn đoán, và thực tế xảy ra, bạn mới kiểm tra được các hiểu biết của mình có chính xác hay không.&lt;br /&gt;- Thường xuyên nhìn xem &lt;strong&gt;địa chỉ của các biến, địa chỉ của các lệnh,&lt;/strong&gt;&nbsp;với các cửa số Label, cột Address, đoán xem tại sao lại ở địa chỉ đó. Có như vậy bạn mới nắm được cách thức phần cứng (CPU) kiểm soát các tài nguyên vật lý.&lt;br /&gt;- Đừng chạy các thuật toán dài phức tạp, Chỉ cần tập trung vào những&lt;strong&gt; đoạn lệnh ngắn từ 2~7 lệnh,&lt;/strong&gt; và mường tượng ra cách thức CPU vận hành.&lt;br /&gt;-&nbsp;Bạn hãy&lt;strong&gt; đặt ra những thắc mắc&lt;/strong&gt; như thế này với mỗi lệnh: khuôn dạng lệnh là gi? có bao nhiêu toán hạng? toán hạng nằm ở đâu, thanh ghi lệnh/thanh ghi dữ liệu/ bộ nhớ chính/vào ra?&nbsp; toán tử là gì? các module nào trong CPU sẽ tham gia xử lý chúng, ALU/khối thanh ghi/Bộ nhớ dữ liệu?&nbsp;&lt;/p&gt;
+&lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+  
+  &lt;script type="text/javascript"&gt;
+    (function (require) {
+        require(['/static/js/dateutil_factory.84670a6ecfae.js?raw'], function () {
+          require(['js/dateutil_factory'], function (DateUtilFactory) {
+            
+    DateUtilFactory.transform('.localized-datetime');
+
+          });
+        });
+    }).call(this, require || RequireJS.require);
+  &lt;/script&gt;
+
+
+&lt;script&gt;
+    function emit_event(message) {
+        parent.postMessage(message, '*');
+    }
+&lt;/script&gt;
+
+&lt;/div&gt;
+
+  </div>
+  <div id="seq_contents_1" aria-labelledby="tab_1" aria-hidden="true" class="seq_contents tex2jax_ignore asciimath2jax_ignore">
+    
+&lt;div class="xblock xblock-student_view xblock-student_view-vertical" data-course-id="course-v1:SoICT+IT3030+2020-2" data-init="VerticalStudentView" data-runtime-class="LmsRuntime" data-runtime-version="1" data-block-type="vertical" data-usage-id="block-v1:SoICT+IT3030+2020-2+type@vertical+block@78d9a03d5f874514a59b8f96587d192c" data-request-token="63d1e46a945511ef8a3323219c7798f4" data-graded="False" data-has-score="False"&gt;
+  
+
+
+
+
+
+  &lt;h2 class="hd hd-2 unit-title"&gt;Công cụ giả lập RARS&lt;/h2&gt;
+
+
+  
+
+
+
+&lt;div class="bookmark-button-wrapper"&gt;
+  &lt;button class="btn btn-link bookmark-button "
+    aria-pressed="false"
+    data-bookmark-id="20193237,block-v1:SoICT+IT3030+2020-2+type@vertical+block@78d9a03d5f874514a59b8f96587d192c"
+    data-bookmarks-api-url="/api/bookmarks/v1/bookmarks/"&gt;
+     &lt;span class="bookmark-text"&gt;Đánh dấu trang này&lt;/span&gt;
+    &lt;/button&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class="vert-mod"&gt;
+    &lt;div class="vert vert-0" data-id="block-v1:SoICT+IT3030+2020-2+type@html+block@09b62a8aeb7e4a31a6600fc540cacbda"&gt;
+        
+&lt;div class="xblock xblock-student_view xblock-student_view-html xmodule_display xmodule_HtmlBlock" data-course-id="course-v1:SoICT+IT3030+2020-2" data-init="XBlockToXModuleShim" data-runtime-class="LmsRuntime" data-runtime-version="1" data-block-type="html" data-usage-id="block-v1:SoICT+IT3030+2020-2+type@html+block@09b62a8aeb7e4a31a6600fc540cacbda" data-request-token="63d1e46a945511ef8a3323219c7798f4" data-graded="False" data-has-score="False"&gt;
+  &lt;script type="json/xblock-args" class="xblock-json-init-args"&gt;
+    {"xmodule-type": "HTMLModule"}
+  &lt;/script&gt;
+  &lt;p&gt;&lt;iframe title="RARS" src="https://neittien0110.github.io/RISC-VFundamentalMaterials/RARS.vi.html" width="100%" height="600px" marginwidth="0" marginheight="0" frameborder="0" scrolling="yes"&gt;
+
+Your browser does not support IFrames.
+
+&lt;/iframe&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+  
+  &lt;script type="text/javascript"&gt;
+    (function (require) {
+        require(['/static/js/dateutil_factory.84670a6ecfae.js?raw'], function () {
+          require(['js/dateutil_factory'], function (DateUtilFactory) {
+            
+    DateUtilFactory.transform('.localized-datetime');
+
+          });
+        });
+    }).call(this, require || RequireJS.require);
+  &lt;/script&gt;
+
+
+&lt;script&gt;
+    function emit_event(message) {
+        parent.postMessage(message, '*');
+    }
+&lt;/script&gt;
+
+&lt;/div&gt;
+
+  </div>
+  <div id="seq_contents_2" aria-labelledby="tab_2" aria-hidden="true" class="seq_contents tex2jax_ignore asciimath2jax_ignore">
+    
+&lt;div class="xblock xblock-student_view xblock-student_view-vertical" data-course-id="course-v1:SoICT+IT3030+2020-2" data-init="VerticalStudentView" data-runtime-class="LmsRuntime" data-runtime-version="1" data-block-type="vertical" data-usage-id="block-v1:SoICT+IT3030+2020-2+type@vertical+block@0ab6e2841f99496085cfc157e1381ba2" data-request-token="63d1e46a945511ef8a3323219c7798f4" data-graded="False" data-has-score="False"&gt;
+  
+
+
+
+
+
+  &lt;h2 class="hd hd-2 unit-title"&gt;Công cụ giả lập RIPES.me&lt;/h2&gt;
+
+
+  
+
+
+
+&lt;div class="bookmark-button-wrapper"&gt;
+  &lt;button class="btn btn-link bookmark-button "
+    aria-pressed="false"
+    data-bookmark-id="20193237,block-v1:SoICT+IT3030+2020-2+type@vertical+block@0ab6e2841f99496085cfc157e1381ba2"
+    data-bookmarks-api-url="/api/bookmarks/v1/bookmarks/"&gt;
+     &lt;span class="bookmark-text"&gt;Đánh dấu trang này&lt;/span&gt;
+    &lt;/button&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class="vert-mod"&gt;
+    &lt;div class="vert vert-0" data-id="block-v1:SoICT+IT3030+2020-2+type@html+block@3b16158791624092a87e69fc18d2eff3"&gt;
+        
+&lt;div class="xblock xblock-student_view xblock-student_view-html xmodule_display xmodule_HtmlBlock" data-course-id="course-v1:SoICT+IT3030+2020-2" data-init="XBlockToXModuleShim" data-runtime-class="LmsRuntime" data-runtime-version="1" data-block-type="html" data-usage-id="block-v1:SoICT+IT3030+2020-2+type@html+block@3b16158791624092a87e69fc18d2eff3" data-request-token="63d1e46a945511ef8a3323219c7798f4" data-graded="False" data-has-score="False"&gt;
+  &lt;script type="json/xblock-args" class="xblock-json-init-args"&gt;
+    {"xmodule-type": "HTMLModule"}
+  &lt;/script&gt;
+  &lt;iframe title="RIPME.me" src="https://neittien0110.github.io/RISC-VFundamentalMaterials/RIPES.vi.html" width="100%" height="600px" marginwidth="0" marginheight="0" frameborder="0" scrolling="yes"&gt;
+Your browser does not support IFrames.
+&lt;/iframe&gt;
+&lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+  
+  &lt;script type="text/javascript"&gt;
+    (function (require) {
+        require(['/static/js/dateutil_factory.84670a6ecfae.js?raw'], function () {
+          require(['js/dateutil_factory'], function (DateUtilFactory) {
+            
+    DateUtilFactory.transform('.localized-datetime');
+
+          });
+        });
+    }).call(this, require || RequireJS.require);
+  &lt;/script&gt;
+
+
+&lt;script&gt;
+    function emit_event(message) {
+        parent.postMessage(message, '*');
+    }
+&lt;/script&gt;
+
+&lt;/div&gt;
+
+  </div>
+  <div id="seq_contents_3" aria-labelledby="tab_3" aria-hidden="true" class="seq_contents tex2jax_ignore asciimath2jax_ignore">
+    
+&lt;div class="xblock xblock-student_view xblock-student_view-vertical" data-course-id="course-v1:SoICT+IT3030+2020-2" data-init="VerticalStudentView" data-runtime-class="LmsRuntime" data-runtime-version="1" data-block-type="vertical" data-usage-id="block-v1:SoICT+IT3030+2020-2+type@vertical+block@13768140916240bcb538284f7a2fa325" data-request-token="63d1e46a945511ef8a3323219c7798f4" data-graded="False" data-has-score="False"&gt;
+  
+
+
+
+
+
+  &lt;h2 class="hd hd-2 unit-title"&gt;Câu hỏi trắc nghiệm&lt;/h2&gt;
+
+
+  
+
+
+
+&lt;div class="bookmark-button-wrapper"&gt;
+  &lt;button class="btn btn-link bookmark-button "
+    aria-pressed="false"
+    data-bookmark-id="20193237,block-v1:SoICT+IT3030+2020-2+type@vertical+block@13768140916240bcb538284f7a2fa325"
+    data-bookmarks-api-url="/api/bookmarks/v1/bookmarks/"&gt;
+     &lt;span class="bookmark-text"&gt;Đánh dấu trang này&lt;/span&gt;
+    &lt;/button&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class="vert-mod"&gt;
+    &lt;div class="vert vert-0" data-id="block-v1:SoICT+IT3030+2020-2+type@problem+block@71e4f9f8c7274125b67220f92a66108c"&gt;
+        
+&lt;div class="xblock xblock-student_view xblock-student_view-problem xmodule_display xmodule_ProblemBlock" data-course-id="course-v1:SoICT+IT3030+2020-2" data-init="XBlockToXModuleShim" data-runtime-class="LmsRuntime" data-runtime-version="1" data-block-type="problem" data-usage-id="block-v1:SoICT+IT3030+2020-2+type@problem+block@71e4f9f8c7274125b67220f92a66108c" data-request-token="63d1e46a945511ef8a3323219c7798f4" data-graded="False" data-has-score="True"&gt;
+  &lt;script type="json/xblock-args" class="xblock-json-init-args"&gt;
+    {"xmodule-type": "Problem"}
+  &lt;/script&gt;
+  &lt;div id="problem_71e4f9f8c7274125b67220f92a66108c" class="problems-wrapper" role="group"
+     aria-labelledby="71e4f9f8c7274125b67220f92a66108c-problem-title"
+     data-problem-id="block-v1:SoICT+IT3030+2020-2+type@problem+block@71e4f9f8c7274125b67220f92a66108c" data-url="/courses/course-v1:SoICT+IT3030+2020-2/xblock/block-v1:SoICT+IT3030+2020-2+type@problem+block@71e4f9f8c7274125b67220f92a66108c/handler/xmodule_handler"
+     data-problem-score="2"
+     data-problem-total-possible="2"
+     data-attempts-used="1"
+     data-content="
+
+
+
+&amp;lt;h3 class=&amp;#34;hd hd-3 problem-header&amp;#34; id=&amp;#34;71e4f9f8c7274125b67220f92a66108c-problem-title&amp;#34; aria-describedby=&amp;#34;block-v1:SoICT+IT3030+2020-2+type@problem+block@71e4f9f8c7274125b67220f92a66108c-problem-progress&amp;#34; tabindex=&amp;#34;-1&amp;#34;&amp;gt;
+  Qui định về địa chỉ bắt đầu
+&amp;lt;/h3&amp;gt;
+
+&amp;lt;div class=&amp;#34;problem-progress&amp;#34; id=&amp;#34;block-v1:SoICT+IT3030+2020-2+type@problem+block@71e4f9f8c7274125b67220f92a66108c-problem-progress&amp;#34;&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;div class=&amp;#34;problem&amp;#34;&amp;gt;
+  &amp;lt;div&amp;gt;
+&amp;lt;p&amp;gt;H&amp;amp;#227;y ch&amp;amp;#7841;y ph&amp;amp;#7847;n m&amp;amp;#7873;m RARS, m&amp;amp;#7903; menu &amp;lt;b&amp;gt;Settings / Memory Configuration ...&amp;lt;/b&amp;gt;. H&amp;amp;#7897;p ch&amp;amp;#7885;n &amp;lt;b&amp;gt;Configuration&amp;lt;/b&amp;gt; &amp;amp;#273;&amp;amp;#7875; m&amp;amp;#7863;c &amp;amp;#273;&amp;amp;#7883;nh =(default). &amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Trong ph&amp;amp;#7847;n m&amp;amp;#7873;m RARS, xem danh s&amp;amp;#225;ch c&amp;amp;#225;c &amp;amp;#273;&amp;amp;#7883;a ch&amp;amp;#7881; b&amp;amp;#7855;t &amp;amp;#273;&amp;amp;#7847;u c&amp;amp;#7911;a c&amp;amp;#225;c v&amp;amp;#249;ng th&amp;amp;#244;ng tin trong b&amp;amp;#7897; nh&amp;amp;#7899; ch&amp;amp;#237;nh. H&amp;amp;#227;y so s&amp;amp;#225;nh v&amp;amp;#7899;i slide gi&amp;amp;#7899;i thi&amp;amp;#7879;u &amp;lt;b&amp;gt;M&amp;amp;#244; h&amp;amp;#236;nh l&amp;amp;#7853;p tr&amp;amp;#236;nh c&amp;amp;#7911;a m&amp;amp;#225;y t&amp;amp;#237;nh&amp;lt;/b&amp;gt; v&amp;amp;#224; x&amp;amp;#225;c &amp;amp;#273;&amp;amp;#7883;nh &amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;&amp;amp;#272;&amp;amp;#7883;a ch&amp;amp;#7881; b&amp;amp;#7855;t &amp;amp;#273;&amp;amp;#7847;u c&amp;amp;#7911;a v&amp;amp;#249;ng l&amp;amp;#7879;nh l&amp;amp;#224; g&amp;amp;#236;?&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;#34;wrapper-problem-response&amp;#34; tabindex=&amp;#34;-1&amp;#34; aria-label=&amp;#34;Question 1&amp;#34; role=&amp;#34;group&amp;#34;&amp;gt;&amp;lt;div class=&amp;#34;choicegroup capa_inputtype&amp;#34; id=&amp;#34;inputtype_71e4f9f8c7274125b67220f92a66108c_2_1&amp;#34;&amp;gt;
+    &amp;lt;fieldset aria-describedby=&amp;#34;status_71e4f9f8c7274125b67220f92a66108c_2_1&amp;#34;&amp;gt;
+          
+          &amp;lt;div class=&amp;#34;field&amp;#34;&amp;gt;
+            &amp;lt;input type=&amp;#34;radio&amp;#34; name=&amp;#34;input_71e4f9f8c7274125b67220f92a66108c_2_1&amp;#34; id=&amp;#34;input_71e4f9f8c7274125b67220f92a66108c_2_1_choice_1&amp;#34; class=&amp;#34;field-input input-radio&amp;#34; value=&amp;#34;choice_1&amp;#34;/&amp;gt;&amp;lt;label id=&amp;#34;71e4f9f8c7274125b67220f92a66108c_2_1-choice_1-label&amp;#34; for=&amp;#34;input_71e4f9f8c7274125b67220f92a66108c_2_1_choice_1&amp;#34; class=&amp;#34;response-label field-label label-inline&amp;#34; aria-describedby=&amp;#34;status_71e4f9f8c7274125b67220f92a66108c_2_1&amp;#34;&amp;gt; 0x10010000
+            &amp;lt;/label&amp;gt;
+          &amp;lt;/div&amp;gt;
+          
+          &amp;lt;div class=&amp;#34;field&amp;#34;&amp;gt;
+            &amp;lt;input type=&amp;#34;radio&amp;#34; name=&amp;#34;input_71e4f9f8c7274125b67220f92a66108c_2_1&amp;#34; id=&amp;#34;input_71e4f9f8c7274125b67220f92a66108c_2_1_choice_2&amp;#34; class=&amp;#34;field-input input-radio&amp;#34; value=&amp;#34;choice_2&amp;#34;/&amp;gt;&amp;lt;label id=&amp;#34;71e4f9f8c7274125b67220f92a66108c_2_1-choice_2-label&amp;#34; for=&amp;#34;input_71e4f9f8c7274125b67220f92a66108c_2_1_choice_2&amp;#34; class=&amp;#34;response-label field-label label-inline&amp;#34; aria-describedby=&amp;#34;status_71e4f9f8c7274125b67220f92a66108c_2_1&amp;#34;&amp;gt; 0xFFFF0000
+            &amp;lt;/label&amp;gt;
+          &amp;lt;/div&amp;gt;
+          
+          &amp;lt;div class=&amp;#34;field&amp;#34;&amp;gt;
+            &amp;lt;input type=&amp;#34;radio&amp;#34; name=&amp;#34;input_71e4f9f8c7274125b67220f92a66108c_2_1&amp;#34; id=&amp;#34;input_71e4f9f8c7274125b67220f92a66108c_2_1_choice_3&amp;#34; class=&amp;#34;field-input input-radio&amp;#34; value=&amp;#34;choice_3&amp;#34;/&amp;gt;&amp;lt;label id=&amp;#34;71e4f9f8c7274125b67220f92a66108c_2_1-choice_3-label&amp;#34; for=&amp;#34;input_71e4f9f8c7274125b67220f92a66108c_2_1_choice_3&amp;#34; class=&amp;#34;response-label field-label label-inline&amp;#34; aria-describedby=&amp;#34;status_71e4f9f8c7274125b67220f92a66108c_2_1&amp;#34;&amp;gt; 0x7FFFFFFC
+            &amp;lt;/label&amp;gt;
+          &amp;lt;/div&amp;gt;
+          
+          &amp;lt;div class=&amp;#34;field&amp;#34;&amp;gt;
+            &amp;lt;input type=&amp;#34;radio&amp;#34; name=&amp;#34;input_71e4f9f8c7274125b67220f92a66108c_2_1&amp;#34; id=&amp;#34;input_71e4f9f8c7274125b67220f92a66108c_2_1_choice_0&amp;#34; class=&amp;#34;field-input input-radio submitted&amp;#34; value=&amp;#34;choice_0&amp;#34; checked=&amp;#34;true&amp;#34;/&amp;gt;&amp;lt;label id=&amp;#34;71e4f9f8c7274125b67220f92a66108c_2_1-choice_0-label&amp;#34; for=&amp;#34;input_71e4f9f8c7274125b67220f92a66108c_2_1_choice_0&amp;#34; class=&amp;#34;response-label field-label label-inline choicegroup_correct&amp;#34; aria-describedby=&amp;#34;status_71e4f9f8c7274125b67220f92a66108c_2_1&amp;#34;&amp;gt; 0x00400000
+            &amp;lt;/label&amp;gt;
+          &amp;lt;/div&amp;gt;
+        &amp;lt;span id=&amp;#34;answer_71e4f9f8c7274125b67220f92a66108c_2_1&amp;#34;/&amp;gt;
+    &amp;lt;/fieldset&amp;gt;
+    &amp;lt;div class=&amp;#34;indicator-container&amp;#34;&amp;gt;
+          
+
+&amp;lt;span class=&amp;#34;status correct&amp;#34; id=&amp;#34;status_71e4f9f8c7274125b67220f92a66108c_2_1&amp;#34; data-tooltip=&amp;#34;This answer is correct.&amp;#34;&amp;gt;
+  &amp;lt;span class=&amp;#34;sr&amp;#34;&amp;gt;correct&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;#34;status-icon&amp;#34; aria-hidden=&amp;#34;true&amp;#34;/&amp;gt;
+&amp;lt;/span&amp;gt;
+
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;p&amp;gt;&amp;amp;#272;&amp;amp;#7883;a ch&amp;amp;#7881; b&amp;amp;#7855;t &amp;amp;#273;&amp;amp;#7847;u c&amp;amp;#7911;a v&amp;amp;#249;ng d&amp;amp;#7919; li&amp;amp;#7879;u l&amp;amp;#224; g&amp;amp;#236;?&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;#34;wrapper-problem-response&amp;#34; tabindex=&amp;#34;-1&amp;#34; aria-label=&amp;#34;Question 2&amp;#34; role=&amp;#34;group&amp;#34;&amp;gt;&amp;lt;div class=&amp;#34;choicegroup capa_inputtype&amp;#34; id=&amp;#34;inputtype_71e4f9f8c7274125b67220f92a66108c_3_1&amp;#34;&amp;gt;
+    &amp;lt;fieldset aria-describedby=&amp;#34;status_71e4f9f8c7274125b67220f92a66108c_3_1&amp;#34;&amp;gt;
+          
+          &amp;lt;div class=&amp;#34;field&amp;#34;&amp;gt;
+            &amp;lt;input type=&amp;#34;radio&amp;#34; name=&amp;#34;input_71e4f9f8c7274125b67220f92a66108c_3_1&amp;#34; id=&amp;#34;input_71e4f9f8c7274125b67220f92a66108c_3_1_choice_1&amp;#34; class=&amp;#34;field-input input-radio submitted&amp;#34; value=&amp;#34;choice_1&amp;#34; checked=&amp;#34;true&amp;#34;/&amp;gt;&amp;lt;label id=&amp;#34;71e4f9f8c7274125b67220f92a66108c_3_1-choice_1-label&amp;#34; for=&amp;#34;input_71e4f9f8c7274125b67220f92a66108c_3_1_choice_1&amp;#34; class=&amp;#34;response-label field-label label-inline choicegroup_correct&amp;#34; aria-describedby=&amp;#34;status_71e4f9f8c7274125b67220f92a66108c_3_1&amp;#34;&amp;gt; 0x10010000
+            &amp;lt;/label&amp;gt;
+          &amp;lt;/div&amp;gt;
+          
+          &amp;lt;div class=&amp;#34;field&amp;#34;&amp;gt;
+            &amp;lt;input type=&amp;#34;radio&amp;#34; name=&amp;#34;input_71e4f9f8c7274125b67220f92a66108c_3_1&amp;#34; id=&amp;#34;input_71e4f9f8c7274125b67220f92a66108c_3_1_choice_2&amp;#34; class=&amp;#34;field-input input-radio&amp;#34; value=&amp;#34;choice_2&amp;#34;/&amp;gt;&amp;lt;label id=&amp;#34;71e4f9f8c7274125b67220f92a66108c_3_1-choice_2-label&amp;#34; for=&amp;#34;input_71e4f9f8c7274125b67220f92a66108c_3_1_choice_2&amp;#34; class=&amp;#34;response-label field-label label-inline&amp;#34; aria-describedby=&amp;#34;status_71e4f9f8c7274125b67220f92a66108c_3_1&amp;#34;&amp;gt; 0xFFFF0000
+            &amp;lt;/label&amp;gt;
+          &amp;lt;/div&amp;gt;
+          
+          &amp;lt;div class=&amp;#34;field&amp;#34;&amp;gt;
+            &amp;lt;input type=&amp;#34;radio&amp;#34; name=&amp;#34;input_71e4f9f8c7274125b67220f92a66108c_3_1&amp;#34; id=&amp;#34;input_71e4f9f8c7274125b67220f92a66108c_3_1_choice_3&amp;#34; class=&amp;#34;field-input input-radio&amp;#34; value=&amp;#34;choice_3&amp;#34;/&amp;gt;&amp;lt;label id=&amp;#34;71e4f9f8c7274125b67220f92a66108c_3_1-choice_3-label&amp;#34; for=&amp;#34;input_71e4f9f8c7274125b67220f92a66108c_3_1_choice_3&amp;#34; class=&amp;#34;response-label field-label label-inline&amp;#34; aria-describedby=&amp;#34;status_71e4f9f8c7274125b67220f92a66108c_3_1&amp;#34;&amp;gt; 0x7FFFFFFC
+            &amp;lt;/label&amp;gt;
+          &amp;lt;/div&amp;gt;
+          
+          &amp;lt;div class=&amp;#34;field&amp;#34;&amp;gt;
+            &amp;lt;input type=&amp;#34;radio&amp;#34; name=&amp;#34;input_71e4f9f8c7274125b67220f92a66108c_3_1&amp;#34; id=&amp;#34;input_71e4f9f8c7274125b67220f92a66108c_3_1_choice_0&amp;#34; class=&amp;#34;field-input input-radio&amp;#34; value=&amp;#34;choice_0&amp;#34;/&amp;gt;&amp;lt;label id=&amp;#34;71e4f9f8c7274125b67220f92a66108c_3_1-choice_0-label&amp;#34; for=&amp;#34;input_71e4f9f8c7274125b67220f92a66108c_3_1_choice_0&amp;#34; class=&amp;#34;response-label field-label label-inline&amp;#34; aria-describedby=&amp;#34;status_71e4f9f8c7274125b67220f92a66108c_3_1&amp;#34;&amp;gt; 0x00400000
+            &amp;lt;/label&amp;gt;
+          &amp;lt;/div&amp;gt;
+        &amp;lt;span id=&amp;#34;answer_71e4f9f8c7274125b67220f92a66108c_3_1&amp;#34;/&amp;gt;
+    &amp;lt;/fieldset&amp;gt;
+    &amp;lt;div class=&amp;#34;indicator-container&amp;#34;&amp;gt;
+          
+
+&amp;lt;span class=&amp;#34;status correct&amp;#34; id=&amp;#34;status_71e4f9f8c7274125b67220f92a66108c_3_1&amp;#34; data-tooltip=&amp;#34;This answer is correct.&amp;#34;&amp;gt;
+  &amp;lt;span class=&amp;#34;sr&amp;#34;&amp;gt;correct&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;#34;status-icon&amp;#34; aria-hidden=&amp;#34;true&amp;#34;/&amp;gt;
+&amp;lt;/span&amp;gt;
+
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;p&amp;gt;L&amp;amp;#432;u &amp;amp;#253;: c&amp;amp;#225;c &amp;amp;#273;&amp;amp;#7883;a ch&amp;amp;#7881; n&amp;amp;#224;y c&amp;amp;#243; th&amp;amp;#7875; thay &amp;amp;#273;&amp;amp;#7893;i v&amp;amp;#7899;i t&amp;amp;#249;y thi&amp;amp;#7871;t k&amp;amp;#7871; c&amp;amp;#7911;a m&amp;amp;#7895;i lo&amp;amp;#7841;i CPU v&amp;amp;#224; H&amp;amp;#7879; &amp;amp;#273;i&amp;amp;#7873;u h&amp;amp;#224;nh.&amp;lt;/p&amp;gt;
+&amp;lt;image src=&amp;#34;data:image/png;base64,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&amp;#34;/&amp;gt;
+
+&amp;lt;/div&amp;gt;
+  &amp;lt;div class=&amp;#34;action&amp;#34;&amp;gt;
+    &amp;lt;input type=&amp;#34;hidden&amp;#34; name=&amp;#34;problem_id&amp;#34; value=&amp;#34;Qui định về địa chỉ bắt đầu&amp;#34; /&amp;gt;
+
+    &amp;lt;div class=&amp;#34;problem-action-buttons-wrapper&amp;#34;&amp;gt;
+      &amp;lt;span class=&amp;#34;problem-action-button-wrapper&amp;#34;&amp;gt;
+          &amp;lt;button type=&amp;#34;button&amp;#34; class=&amp;#34;show problem-action-btn btn-default btn-small&amp;#34; aria-describedby=&amp;#34;71e4f9f8c7274125b67220f92a66108c-problem-title&amp;#34;&amp;gt;&amp;lt;span class=&amp;#34;show-label&amp;#34;&amp;gt;Xem đáp án&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt;
+      &amp;lt;/span&amp;gt;
+    &amp;lt;/div&amp;gt;
+    &amp;lt;div class=&amp;#34;submit-attempt-container&amp;#34;&amp;gt;
+      &amp;lt;button type=&amp;#34;button&amp;#34; class=&amp;#34;submit btn-brand&amp;#34; data-submitting=&amp;#34;Đang gửi&amp;#34; data-value=&amp;#34;Gửi&amp;#34; data-should-enable-submit-button=&amp;#34;True&amp;#34; aria-describedby=&amp;#34;submission_feedback_71e4f9f8c7274125b67220f92a66108c&amp;#34; &amp;gt;
+          &amp;lt;span class=&amp;#34;submit-label&amp;#34;&amp;gt;Gửi&amp;lt;/span&amp;gt;
+      &amp;lt;/button&amp;gt;
+
+      &amp;lt;div class=&amp;#34;submission-feedback&amp;#34; id=&amp;#34;submission_feedback_71e4f9f8c7274125b67220f92a66108c&amp;#34;&amp;gt;
+        &amp;lt;span class=&amp;#34;sr&amp;#34;&amp;gt;Một số câu hỏi có các tùy chọn như lưu, đặt lại, gợi ý hoặc hiển thị câu trả lời. Các tùy chọn này nằm sau nút Gửi.&amp;lt;/span&amp;gt;
+      &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/div&amp;gt;
+    
+
+
+&amp;lt;div class=&amp;#34;notification warning notification-gentle-alert
+      is-hidden&amp;#34;
+     tabindex=&amp;#34;-1&amp;#34;&amp;gt;
+    &amp;lt;span class=&amp;#34;icon fa fa-exclamation-circle&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;
+    &amp;lt;span class=&amp;#34;notification-message&amp;#34; aria-describedby=&amp;#34;71e4f9f8c7274125b67220f92a66108c-problem-title&amp;#34;&amp;gt;
+    &amp;lt;/span&amp;gt;
+    &amp;lt;div class=&amp;#34;notification-btn-wrapper&amp;#34;&amp;gt;
+        &amp;lt;button type=&amp;#34;button&amp;#34; class=&amp;#34;btn btn-default btn-small notification-btn review-btn sr&amp;#34;&amp;gt;Xem lại&amp;lt;/button&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+    
+
+
+&amp;lt;div class=&amp;#34;notification warning notification-save
+      is-hidden&amp;#34;
+     tabindex=&amp;#34;-1&amp;#34;&amp;gt;
+    &amp;lt;span class=&amp;#34;icon fa fa-save&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;
+    &amp;lt;span class=&amp;#34;notification-message&amp;#34; aria-describedby=&amp;#34;71e4f9f8c7274125b67220f92a66108c-problem-title&amp;#34;&amp;gt;None
+    &amp;lt;/span&amp;gt;
+    &amp;lt;div class=&amp;#34;notification-btn-wrapper&amp;#34;&amp;gt;
+        &amp;lt;button type=&amp;#34;button&amp;#34; class=&amp;#34;btn btn-default btn-small notification-btn review-btn sr&amp;#34;&amp;gt;Xem lại&amp;lt;/button&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+    
+    
+
+
+&amp;lt;div class=&amp;#34;notification general notification-show-answer
+      is-hidden&amp;#34;
+     tabindex=&amp;#34;-1&amp;#34;&amp;gt;
+    &amp;lt;span class=&amp;#34;icon fa fa-info-circle&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;
+    &amp;lt;span class=&amp;#34;notification-message&amp;#34; aria-describedby=&amp;#34;71e4f9f8c7274125b67220f92a66108c-problem-title&amp;#34;&amp;gt;Câu trả lời được đánh dấu trong các câu hỏi
+    &amp;lt;/span&amp;gt;
+    &amp;lt;div class=&amp;#34;notification-btn-wrapper&amp;#34;&amp;gt;
+        &amp;lt;button type=&amp;#34;button&amp;#34; class=&amp;#34;btn btn-default btn-small notification-btn review-btn sr&amp;#34;&amp;gt;Xem lại&amp;lt;/button&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;/div&amp;gt;
+
+&amp;lt;script&amp;gt;
+    function emit_event(message) {
+        parent.postMessage(message, &amp;#39;*&amp;#39;);
+    }
+&amp;lt;/script&amp;gt;
+"
+     data-graded="False"&gt;
+    &lt;p class="loading-spinner"&gt;
+        &lt;i class="fa fa-spinner fa-pulse fa-2x fa-fw"&gt;&lt;/i&gt;
+        &lt;span class="sr"&gt;Loading&amp;hellip;&lt;/span&gt;
+    &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+    &lt;/div&gt;
+    &lt;div class="vert vert-1" data-id="block-v1:SoICT+IT3030+2020-2+type@problem+block@4829a1757bc34a8d9684f0df8227bb7b"&gt;
+        
+&lt;div class="xblock xblock-student_view xblock-student_view-problem xmodule_display xmodule_ProblemBlock" data-course-id="course-v1:SoICT+IT3030+2020-2" data-init="XBlockToXModuleShim" data-runtime-class="LmsRuntime" data-runtime-version="1" data-block-type="problem" data-usage-id="block-v1:SoICT+IT3030+2020-2+type@problem+block@4829a1757bc34a8d9684f0df8227bb7b" data-request-token="63d1e46a945511ef8a3323219c7798f4" data-graded="False" data-has-score="True"&gt;
+  &lt;script type="json/xblock-args" class="xblock-json-init-args"&gt;
+    {"xmodule-type": "Problem"}
+  &lt;/script&gt;
+  &lt;div id="problem_4829a1757bc34a8d9684f0df8227bb7b" class="problems-wrapper" role="group"
+     aria-labelledby="4829a1757bc34a8d9684f0df8227bb7b-problem-title"
+     data-problem-id="block-v1:SoICT+IT3030+2020-2+type@problem+block@4829a1757bc34a8d9684f0df8227bb7b" data-url="/courses/course-v1:SoICT+IT3030+2020-2/xblock/block-v1:SoICT+IT3030+2020-2+type@problem+block@4829a1757bc34a8d9684f0df8227bb7b/handler/xmodule_handler"
+     data-problem-score="1"
+     data-problem-total-possible="1"
+     data-attempts-used="1"
+     data-content="
+
+
+
+&amp;lt;h3 class=&amp;#34;hd hd-3 problem-header&amp;#34; id=&amp;#34;4829a1757bc34a8d9684f0df8227bb7b-problem-title&amp;#34; aria-describedby=&amp;#34;block-v1:SoICT+IT3030+2020-2+type@problem+block@4829a1757bc34a8d9684f0df8227bb7b-problem-progress&amp;#34; tabindex=&amp;#34;-1&amp;#34;&amp;gt;
+  Tìm địa chỉ của biến
+&amp;lt;/h3&amp;gt;
+
+&amp;lt;div class=&amp;#34;problem-progress&amp;#34; id=&amp;#34;block-v1:SoICT+IT3030+2020-2+type@problem+block@4829a1757bc34a8d9684f0df8227bb7b-problem-progress&amp;#34;&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;div class=&amp;#34;problem&amp;#34;&amp;gt;
+  &amp;lt;div&amp;gt;
+&amp;lt;div class=&amp;#34;wrapper-problem-response&amp;#34; tabindex=&amp;#34;-1&amp;#34; aria-label=&amp;#34;Question 1&amp;#34; role=&amp;#34;group&amp;#34;&amp;gt;&amp;lt;p&amp;gt;B&amp;amp;#7841;n Long d&amp;amp;#249;ng khai b&amp;amp;#225;o bi&amp;amp;#7871;n x trong ph&amp;amp;#7847;n m&amp;amp;#7875;m RARS nh&amp;amp;#432; sau&amp;lt;/p&amp;gt;
+&amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;
+.data
+x: .word  
+&amp;lt;/code&amp;gt;
+&amp;lt;/pre&amp;gt;&amp;lt;p&amp;gt;Long mu&amp;amp;#7889;n bi&amp;amp;#7871;t bi&amp;amp;#7871;n x n&amp;amp;#7857;m &amp;amp;#7903; &amp;amp;#273;&amp;amp;#7883;a ch&amp;amp;#7881; n&amp;amp;#224;o trong RAM (trong b&amp;amp;#7897; nh&amp;amp;#7899; ch&amp;amp;#237;nh) th&amp;amp;#236; ph&amp;amp;#7843;i s&amp;amp;#7917; d&amp;amp;#7909;ng c&amp;amp;#7917;a s&amp;amp;#7893; h&amp;amp;#7895; tr&amp;amp;#7907; n&amp;amp;#224;o trong RARS?&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;#34;choicegroup capa_inputtype&amp;#34; id=&amp;#34;inputtype_4829a1757bc34a8d9684f0df8227bb7b_2_1&amp;#34;&amp;gt;
+    &amp;lt;fieldset aria-describedby=&amp;#34;status_4829a1757bc34a8d9684f0df8227bb7b_2_1&amp;#34;&amp;gt;
+          
+          &amp;lt;div class=&amp;#34;field&amp;#34;&amp;gt;
+            &amp;lt;input type=&amp;#34;radio&amp;#34; name=&amp;#34;input_4829a1757bc34a8d9684f0df8227bb7b_2_1&amp;#34; id=&amp;#34;input_4829a1757bc34a8d9684f0df8227bb7b_2_1_choice_2&amp;#34; class=&amp;#34;field-input input-radio&amp;#34; value=&amp;#34;choice_2&amp;#34;/&amp;gt;&amp;lt;label id=&amp;#34;4829a1757bc34a8d9684f0df8227bb7b_2_1-choice_2-label&amp;#34; for=&amp;#34;input_4829a1757bc34a8d9684f0df8227bb7b_2_1_choice_2&amp;#34; class=&amp;#34;response-label field-label label-inline&amp;#34; aria-describedby=&amp;#34;status_4829a1757bc34a8d9684f0df8227bb7b_2_1&amp;#34;&amp;gt; Data Segment
+            &amp;lt;/label&amp;gt;
+          &amp;lt;/div&amp;gt;
+          
+          &amp;lt;div class=&amp;#34;field&amp;#34;&amp;gt;
+            &amp;lt;input type=&amp;#34;radio&amp;#34; name=&amp;#34;input_4829a1757bc34a8d9684f0df8227bb7b_2_1&amp;#34; id=&amp;#34;input_4829a1757bc34a8d9684f0df8227bb7b_2_1_choice_1&amp;#34; class=&amp;#34;field-input input-radio&amp;#34; value=&amp;#34;choice_1&amp;#34;/&amp;gt;&amp;lt;label id=&amp;#34;4829a1757bc34a8d9684f0df8227bb7b_2_1-choice_1-label&amp;#34; for=&amp;#34;input_4829a1757bc34a8d9684f0df8227bb7b_2_1_choice_1&amp;#34; class=&amp;#34;response-label field-label label-inline&amp;#34; aria-describedby=&amp;#34;status_4829a1757bc34a8d9684f0df8227bb7b_2_1&amp;#34;&amp;gt; Text Segment
+            &amp;lt;/label&amp;gt;
+          &amp;lt;/div&amp;gt;
+          
+          &amp;lt;div class=&amp;#34;field&amp;#34;&amp;gt;
+            &amp;lt;input type=&amp;#34;radio&amp;#34; name=&amp;#34;input_4829a1757bc34a8d9684f0df8227bb7b_2_1&amp;#34; id=&amp;#34;input_4829a1757bc34a8d9684f0df8227bb7b_2_1_choice_0&amp;#34; class=&amp;#34;field-input input-radio submitted&amp;#34; value=&amp;#34;choice_0&amp;#34; checked=&amp;#34;true&amp;#34;/&amp;gt;&amp;lt;label id=&amp;#34;4829a1757bc34a8d9684f0df8227bb7b_2_1-choice_0-label&amp;#34; for=&amp;#34;input_4829a1757bc34a8d9684f0df8227bb7b_2_1_choice_0&amp;#34; class=&amp;#34;response-label field-label label-inline choicegroup_correct&amp;#34; aria-describedby=&amp;#34;status_4829a1757bc34a8d9684f0df8227bb7b_2_1&amp;#34;&amp;gt; Label Window
+            &amp;lt;/label&amp;gt;
+          &amp;lt;/div&amp;gt;
+        &amp;lt;span id=&amp;#34;answer_4829a1757bc34a8d9684f0df8227bb7b_2_1&amp;#34;/&amp;gt;
+    &amp;lt;/fieldset&amp;gt;
+    &amp;lt;div class=&amp;#34;indicator-container&amp;#34;&amp;gt;
+          
+
+&amp;lt;span class=&amp;#34;status correct&amp;#34; id=&amp;#34;status_4829a1757bc34a8d9684f0df8227bb7b_2_1&amp;#34; data-tooltip=&amp;#34;This answer is correct.&amp;#34;&amp;gt;
+  &amp;lt;span class=&amp;#34;sr&amp;#34;&amp;gt;correct&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;#34;status-icon&amp;#34; aria-hidden=&amp;#34;true&amp;#34;/&amp;gt;
+&amp;lt;/span&amp;gt;
+
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+  &amp;lt;div class=&amp;#34;action&amp;#34;&amp;gt;
+    &amp;lt;input type=&amp;#34;hidden&amp;#34; name=&amp;#34;problem_id&amp;#34; value=&amp;#34;Tìm địa chỉ của biến&amp;#34; /&amp;gt;
+
+    &amp;lt;div class=&amp;#34;problem-action-buttons-wrapper&amp;#34;&amp;gt;
+      &amp;lt;span class=&amp;#34;problem-action-button-wrapper&amp;#34;&amp;gt;
+          &amp;lt;button type=&amp;#34;button&amp;#34; class=&amp;#34;save problem-action-btn btn-default btn-small&amp;#34; data-value=&amp;#34;Lưu&amp;#34;&amp;gt;
+              &amp;lt;span aria-hidden=&amp;#34;true&amp;#34;&amp;gt;Lưu&amp;lt;/span&amp;gt;
+              &amp;lt;span class=&amp;#34;sr&amp;#34;&amp;gt;Lưu câu trả lời của bạn&amp;lt;/span&amp;gt;
+          &amp;lt;/button&amp;gt;
+      &amp;lt;/span&amp;gt;
+      &amp;lt;span class=&amp;#34;problem-action-button-wrapper&amp;#34;&amp;gt;
+          &amp;lt;button type=&amp;#34;button&amp;#34; class=&amp;#34;show problem-action-btn btn-default btn-small&amp;#34; aria-describedby=&amp;#34;4829a1757bc34a8d9684f0df8227bb7b-problem-title&amp;#34;&amp;gt;&amp;lt;span class=&amp;#34;show-label&amp;#34;&amp;gt;Xem đáp án&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt;
+      &amp;lt;/span&amp;gt;
+    &amp;lt;/div&amp;gt;
+    &amp;lt;div class=&amp;#34;submit-attempt-container&amp;#34;&amp;gt;
+      &amp;lt;button type=&amp;#34;button&amp;#34; class=&amp;#34;submit btn-brand&amp;#34; data-submitting=&amp;#34;Đang gửi&amp;#34; data-value=&amp;#34;Gửi&amp;#34; data-should-enable-submit-button=&amp;#34;True&amp;#34; aria-describedby=&amp;#34;submission_feedback_4829a1757bc34a8d9684f0df8227bb7b&amp;#34; &amp;gt;
+          &amp;lt;span class=&amp;#34;submit-label&amp;#34;&amp;gt;Gửi&amp;lt;/span&amp;gt;
+      &amp;lt;/button&amp;gt;
+
+      &amp;lt;div class=&amp;#34;submission-feedback&amp;#34; id=&amp;#34;submission_feedback_4829a1757bc34a8d9684f0df8227bb7b&amp;#34;&amp;gt;
+          Bạn đã sử dụng 1 trong tổng số 3 lần trả lời được phép
+        &amp;lt;span class=&amp;#34;sr&amp;#34;&amp;gt;Một số câu hỏi có các tùy chọn như lưu, đặt lại, gợi ý hoặc hiển thị câu trả lời. Các tùy chọn này nằm sau nút Gửi.&amp;lt;/span&amp;gt;
+      &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/div&amp;gt;
+    
+
+
+&amp;lt;div class=&amp;#34;notification warning notification-gentle-alert
+      is-hidden&amp;#34;
+     tabindex=&amp;#34;-1&amp;#34;&amp;gt;
+    &amp;lt;span class=&amp;#34;icon fa fa-exclamation-circle&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;
+    &amp;lt;span class=&amp;#34;notification-message&amp;#34; aria-describedby=&amp;#34;4829a1757bc34a8d9684f0df8227bb7b-problem-title&amp;#34;&amp;gt;
+    &amp;lt;/span&amp;gt;
+    &amp;lt;div class=&amp;#34;notification-btn-wrapper&amp;#34;&amp;gt;
+        &amp;lt;button type=&amp;#34;button&amp;#34; class=&amp;#34;btn btn-default btn-small notification-btn review-btn sr&amp;#34;&amp;gt;Xem lại&amp;lt;/button&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+    
+
+
+&amp;lt;div class=&amp;#34;notification warning notification-save
+      is-hidden&amp;#34;
+     tabindex=&amp;#34;-1&amp;#34;&amp;gt;
+    &amp;lt;span class=&amp;#34;icon fa fa-save&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;
+    &amp;lt;span class=&amp;#34;notification-message&amp;#34; aria-describedby=&amp;#34;4829a1757bc34a8d9684f0df8227bb7b-problem-title&amp;#34;&amp;gt;None
+    &amp;lt;/span&amp;gt;
+    &amp;lt;div class=&amp;#34;notification-btn-wrapper&amp;#34;&amp;gt;
+        &amp;lt;button type=&amp;#34;button&amp;#34; class=&amp;#34;btn btn-default btn-small notification-btn review-btn sr&amp;#34;&amp;gt;Xem lại&amp;lt;/button&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+    
+    
+
+
+&amp;lt;div class=&amp;#34;notification general notification-show-answer
+      is-hidden&amp;#34;
+     tabindex=&amp;#34;-1&amp;#34;&amp;gt;
+    &amp;lt;span class=&amp;#34;icon fa fa-info-circle&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;
+    &amp;lt;span class=&amp;#34;notification-message&amp;#34; aria-describedby=&amp;#34;4829a1757bc34a8d9684f0df8227bb7b-problem-title&amp;#34;&amp;gt;Câu trả lời được đánh dấu trong các câu hỏi
+    &amp;lt;/span&amp;gt;
+    &amp;lt;div class=&amp;#34;notification-btn-wrapper&amp;#34;&amp;gt;
+        &amp;lt;button type=&amp;#34;button&amp;#34; class=&amp;#34;btn btn-default btn-small notification-btn review-btn sr&amp;#34;&amp;gt;Xem lại&amp;lt;/button&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;/div&amp;gt;
+
+&amp;lt;script&amp;gt;
+    function emit_event(message) {
+        parent.postMessage(message, &amp;#39;*&amp;#39;);
+    }
+&amp;lt;/script&amp;gt;
+"
+     data-graded="False"&gt;
+    &lt;p class="loading-spinner"&gt;
+        &lt;i class="fa fa-spinner fa-pulse fa-2x fa-fw"&gt;&lt;/i&gt;
+        &lt;span class="sr"&gt;Loading&amp;hellip;&lt;/span&gt;
+    &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+    &lt;/div&gt;
+    &lt;div class="vert vert-2" data-id="block-v1:SoICT+IT3030+2020-2+type@problem+block@7126ca244ac54c45ae5552615763db99"&gt;
+        
+&lt;div class="xblock xblock-student_view xblock-student_view-problem xmodule_display xmodule_ProblemBlock" data-course-id="course-v1:SoICT+IT3030+2020-2" data-init="XBlockToXModuleShim" data-runtime-class="LmsRuntime" data-runtime-version="1" data-block-type="problem" data-usage-id="block-v1:SoICT+IT3030+2020-2+type@problem+block@7126ca244ac54c45ae5552615763db99" data-request-token="63d1e46a945511ef8a3323219c7798f4" data-graded="False" data-has-score="True"&gt;
+  &lt;script type="json/xblock-args" class="xblock-json-init-args"&gt;
+    {"xmodule-type": "Problem"}
+  &lt;/script&gt;
+  &lt;div id="problem_7126ca244ac54c45ae5552615763db99" class="problems-wrapper" role="group"
+     aria-labelledby="7126ca244ac54c45ae5552615763db99-problem-title"
+     data-problem-id="block-v1:SoICT+IT3030+2020-2+type@problem+block@7126ca244ac54c45ae5552615763db99" data-url="/courses/course-v1:SoICT+IT3030+2020-2/xblock/block-v1:SoICT+IT3030+2020-2+type@problem+block@7126ca244ac54c45ae5552615763db99/handler/xmodule_handler"
+     data-problem-score="1"
+     data-problem-total-possible="1"
+     data-attempts-used="1"
+     data-content="
+
+
+
+&amp;lt;h3 class=&amp;#34;hd hd-3 problem-header&amp;#34; id=&amp;#34;7126ca244ac54c45ae5552615763db99-problem-title&amp;#34; aria-describedby=&amp;#34;block-v1:SoICT+IT3030+2020-2+type@problem+block@7126ca244ac54c45ae5552615763db99-problem-progress&amp;#34; tabindex=&amp;#34;-1&amp;#34;&amp;gt;
+  Debug - step into
+&amp;lt;/h3&amp;gt;
+
+&amp;lt;div class=&amp;#34;problem-progress&amp;#34; id=&amp;#34;block-v1:SoICT+IT3030+2020-2+type@problem+block@7126ca244ac54c45ae5552615763db99-problem-progress&amp;#34;&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;div class=&amp;#34;problem&amp;#34;&amp;gt;
+  &amp;lt;div&amp;gt;
+&amp;lt;div class=&amp;#34;wrapper-problem-response&amp;#34; tabindex=&amp;#34;-1&amp;#34; aria-label=&amp;#34;Question 1&amp;#34; role=&amp;#34;group&amp;#34;&amp;gt;&amp;lt;p&amp;gt;Trong ph&amp;amp;#7847;n m&amp;amp;#7875;m RARS, bi&amp;amp;#7875;u t&amp;amp;#432;&amp;amp;#7907;ng n&amp;amp;#224;o c&amp;amp;#243; &amp;amp;#253; ngh&amp;amp;#297;a l&amp;amp;#224; &amp;#34;ch&amp;amp;#7841;y 1 l&amp;amp;#7879;nh ti&amp;amp;#7871;p theo v&amp;amp;#224; d&amp;amp;#7915;ng l&amp;amp;#7841;i&amp;#34;?&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;#34;choicegroup capa_inputtype&amp;#34; id=&amp;#34;inputtype_7126ca244ac54c45ae5552615763db99_2_1&amp;#34;&amp;gt;
+    &amp;lt;fieldset aria-describedby=&amp;#34;status_7126ca244ac54c45ae5552615763db99_2_1&amp;#34;&amp;gt;
+          
+          &amp;lt;div class=&amp;#34;field&amp;#34;&amp;gt;
+            &amp;lt;input type=&amp;#34;radio&amp;#34; name=&amp;#34;input_7126ca244ac54c45ae5552615763db99_2_1&amp;#34; id=&amp;#34;input_7126ca244ac54c45ae5552615763db99_2_1_choice_0&amp;#34; class=&amp;#34;field-input input-radio&amp;#34; value=&amp;#34;choice_0&amp;#34;/&amp;gt;&amp;lt;label id=&amp;#34;7126ca244ac54c45ae5552615763db99_2_1-choice_0-label&amp;#34; for=&amp;#34;input_7126ca244ac54c45ae5552615763db99_2_1_choice_0&amp;#34; class=&amp;#34;response-label field-label label-inline&amp;#34; aria-describedby=&amp;#34;status_7126ca244ac54c45ae5552615763db99_2_1&amp;#34;&amp;gt; &amp;lt;image alt=&amp;#34;play&amp;#34; src=&amp;#34;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAdCAYAAABSZrcyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATXSURBVEhLxZVZTFRnFMd9E5gFSDEh9s02ig88uJUOmwqRUihKrZZAKZWgWAMSS6laApFWpChYgpQCwSIqlrIUkVWMIKCsFocgCiPQIiCbgCCIFDD/zjn2kpnhQu3TTPLLDJfvnt93zvmWFQNj09AHoWdSsGJ44iX0ActHJ2egD1g+8WIW/4fWrk7kV5YgKi0GkanRuFKSA6WqTXTscrB8amYOb0LMxTg4+u/Ayi0rGYP3DWCoMFz4e53bOoQlnBB9VwyWz8zOYzmeDA3ik+A9LNgQswFxdXGo6a1B3/M+jEyP8O+EhgT+H42x87FHq7oSYrE0Yfnc/CssRVVTNYxtjCH7SIb05nSWESTWRHieei8V8r1ySBVSZBZkicYUYDmW+IyOj2L1B6thFmIG1aiKaRpoYhr7GxcQnikHlTyGvk2/MoWpnSmULcp/oy3+LJu55zFPSJ2kXNaK7gpsOrsJUi8pQm+GIl+Vv0BxRzFKO0tR1lXG0Ni89jzInGWw9bbDs/EJ0fhL9ryoupT7F1UdxcEyWzNhHGSMsZdjCCoOgvlxcxzMP4g0ZRpDLSFoXNaDLBQ8KkBgUSDH+C7+5KL4BMvFVqL1FzZcuts9t5H0RxLi6+NhcsQE86/meQLTc9MIKAzAqm9W4cDVA7wIaUzi3USkNKVw77n/++VY8+E76B8aWeRgue7++/NJPwzeM8Duy7uRcT8DkVWRiLgVAeMAY5YLTMxMYGp2Cvty9/Ek6JvGRt+JRmxtLE+CWkXZl1ZUaDkIlo9N/g1NrlXd4BcoGwp0tOwogkuDIfeXa8kFqBI0kb1X9vIkfH/3RVh5GEKuh8AlzeV1+xJitRwEy3XP3OTcdH6Beufxqwfjne0Nma9MVC5AW40mQXK7RDvO2i3djasY9H2IloNgue5tk5TzWk4LaWPsRlietoTFKQsYuRqJSjWhtUCV8MnxgeKcAjsv7mT54YgQLQfB8t6RF9Aku/w6y6nPzuedFyYgcZeICgnKmMSVjyu55I4pjtj681ZsS9rGscLP/qDlIFjePTwFTZq7emFoZQj3S+68kjf/uJlLKPl4sVyQ0llAUtcLrpyx7U+2cEp1wtqTa1mecbVQy0GwvGtwErps8VLANNCUS0+BrBOsId0jXZDSKqdvOtloUdLOICmNo35TxvSM3lnj8i5qlO2LHCx/1P8culwqKeQZU+9oP1NAWsmCvGW4hfe0Z6YnCwmaJI1zSHbgCghZf33qBJo7BhY5WN7WNwEx3A5/Csl2CR8elAX1kU4wkvrl+XF2JBMyJSmVWkBiL4H1Z9tRVtMsGp/lD3rGIUbdw26YO7wNEz8T3vOHrh3ifasp0IVWN20v2S4Z3rI3Q1pWAZSdQ6LxWd7S/QxLcbn0BkzUtxNVgEpJlwrteZIIQnpOlfH6zQvro9bDyE4CubVcfaYnoPb+Y9G4BMuVf41hOcrvqbBj/y7uH1XBKt6KT7NA9cUhVIPOAZmHjMfYfO6IX7KLcKe1RzSeAMubukbxX9zteIrIlGQo1D2kQ4Mkuli4WcL3+BH1jdiMBtWgaBxNWN7YMYI3pb59CLk3G3D6fDq+jPgW/uHHEB5/Dml56ru8vh21bQOi74nB8jrVU+gDlte0DUMfsLz64RD0ActvtQ5CH4SeScE/qnBFyTVgRAgAAAAASUVORK5CYII=&amp;#34;/&amp;gt;
+            &amp;lt;/label&amp;gt;
+          &amp;lt;/div&amp;gt;
+          
+          &amp;lt;div class=&amp;#34;field&amp;#34;&amp;gt;
+            &amp;lt;input type=&amp;#34;radio&amp;#34; name=&amp;#34;input_7126ca244ac54c45ae5552615763db99_2_1&amp;#34; id=&amp;#34;input_7126ca244ac54c45ae5552615763db99_2_1_choice_2&amp;#34; class=&amp;#34;field-input input-radio&amp;#34; value=&amp;#34;choice_2&amp;#34;/&amp;gt;&amp;lt;label id=&amp;#34;7126ca244ac54c45ae5552615763db99_2_1-choice_2-label&amp;#34; for=&amp;#34;input_7126ca244ac54c45ae5552615763db99_2_1_choice_2&amp;#34; class=&amp;#34;response-label field-label label-inline&amp;#34; aria-describedby=&amp;#34;status_7126ca244ac54c45ae5552615763db99_2_1&amp;#34;&amp;gt; &amp;lt;image alt=&amp;#34;back1&amp;#34; src=&amp;#34;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAeCAYAAADQBxWhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARrSURBVEhL5dT7T5NXHMfx/by/YSbOuSVbZrKZzSxzDofo8I7bHCK7iUaNlzkjETUTdHPGy0Qd4igWS7FDQgWp0HHRishFrVykKlApKFAK2AI66b1P33ueTgg6h9RNs8STfPIk7TnfV789zzkv9PX18Swjk8l4ztBjRdVPNf+IDv9ipNRea0OZV8eetErST9ahr7+F1db7yLlSngi1iQWbWztJTK9k2vJs3onOYsqSbMKWn+DDGDWTvsgi4jsNCYfKaDJ1BuYPXx80arXZOF3RwLKEAuauz+eXHCM1rQN09nu56xDovuvF0G5HVXKTyM3FRG8q4JSuga5u61CNoNGLNU3MXKVmyY9llBp66RCxrju+AGq+H8sdKT7qbw2QkHqZ2d9qKDjXONRxUKjFYmHRBjUz12nRXfuDqxYP9WYPVzrc1La7qWlzUS2m5GovyxJ17Ndcp/aWk7hDeqLj8jG2WAJ1gkJ/PlLCuDkKlOV9lLd40BndnGkSkQYnRdccqPV9xKbpSdbU0T/g5NMdRZw3uTnbMMCc9VqSM/WBOqNGjTdamBSlJGxTFXkGD7lX3KjrXGTqB0g5e5u9mmb2ZFfT0tmPx+fD7/czf3sJ2bVOTje52Xr0OlPEl+y21TZ6NPNkGWPDU4lJ6yLtogdZhYOd+V3s0bRyIM9AtbELnyAgCH4GR3h8Mb+WOzh22UVqaT9vLvyNGvF4jRpN2K9hzHQZX6ocfJ3pZEteH6qyNi41WgKQBD48QsS3d6vWTnyhk4xLTt6OyiJLaxg9Grc7l5dmpBB5zMMsuYuMagf3nN4HOnt4vLq6kJCke4QetpNY6mLi4izx8qgdPbrrcH6g0wXye4TLPcQVOagyu7B7/eIe/r1Laby8soh3EweYnuJkR6GdCZHH0YpH57FoT08PBoOBwtMVvDZXTsg2I3MUPqameJincLL7vIML4pG54xJwe4XACyRFGuNWFTM5yUl0ppuNxy1MEPe0zdwzMtrRYebFsfMCMRqNLI7NZnzkSSLkdsLTBEJlXqYedvO5ykVipZOqDg82uw+v+JdL7OsbKvj4iJfNBS6itlcSs/X3ADIiOghKkTo+VVTJxEgl78VeZoHSx8yjfmbIfYSlepkhFo854eZglZuLnR5u9gt8dNDGUrXAxvRWwlbkUFzeGBwqfdbe3s6+VC3jF6iYvuMGC1UCsxX+AB5+P/OVAjE5Ams0Ams1fn7IsxGy4hS75OVYum4/HpWew1EpjU3NrP8plzHhaUyOvcBX4n5FHYeIDJil+Ou59ATsLPWzJtXEK+INtjRey42WzqEaQaO9vb3i7WQiKb2E96OVvLFITej3dUQld7BaZWOlwkLk3gY+WJHPW5+ls+/oObHDnqH1UoJGpUiw2WxGe6aaLYmFRKzNYuo3GYEfEbpExSfr1Gw/pKO06npg7vC1Up4IHYzVasVkMqEr05OkKGbbgQKSM3SUVdXT3f1gd8Pzr9AnzYjoIPhfw/8/9GnmkeizzPOEyvgTTPaGIkRXsRsAAAAASUVORK5CYII=&amp;#34;/&amp;gt;
+            &amp;lt;/label&amp;gt;
+          &amp;lt;/div&amp;gt;
+          
+          &amp;lt;div class=&amp;#34;field&amp;#34;&amp;gt;
+            &amp;lt;input type=&amp;#34;radio&amp;#34; name=&amp;#34;input_7126ca244ac54c45ae5552615763db99_2_1&amp;#34; id=&amp;#34;input_7126ca244ac54c45ae5552615763db99_2_1_choice_3&amp;#34; class=&amp;#34;field-input input-radio&amp;#34; value=&amp;#34;choice_3&amp;#34;/&amp;gt;&amp;lt;label id=&amp;#34;7126ca244ac54c45ae5552615763db99_2_1-choice_3-label&amp;#34; for=&amp;#34;input_7126ca244ac54c45ae5552615763db99_2_1_choice_3&amp;#34; class=&amp;#34;response-label field-label label-inline&amp;#34; aria-describedby=&amp;#34;status_7126ca244ac54c45ae5552615763db99_2_1&amp;#34;&amp;gt; &amp;lt;image alt=&amp;#34;reset&amp;#34; src=&amp;#34;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAYAAACGVs+MAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAR2SURBVFhH7ZV9SNR3HMf3X8rdmYIQ0V9BSBH+0cOmZzrdtUSy8kidWCINixCFnAgrsRBN03KG082dNnXq5izy4aY4Z5pa7qG8OenGdvMBH0InugO35sbWeM/3J36Heb/zYQzaoIP3/e6+9/1+Pq/Pw/dzL2DxZbfbn4lMJhOeA/w/AQa/G0RDRwNyynKQVZqFGnMN+h/0q+5dSesGyLuWB8NJAza8uEHk5u8Gd72747vPIR+cKzynelZNawYYGh2C8YxRnOy6sgtXv7iKvsk+PPz5IeYW5uRz8VfF8hv37Du+D/0Dq2dkTQBtvW3wCPCA7pAOVd9UiUOKzpdKWS//uhwe0R7Q6rWorK9UtaloVYCRsRFsDt0M7zRv2H6yiSzTFtG9qXsOKWsDPw7IHj693vCCZ6Aneu72qNqmVgWISo2CNlQrKe4a60L7SDvahtvQZGvCsY+PyZNqHWqV9aIvi5B3N0/2NnzfAF2YDvpYPSYnJ1Xtrwhw87ObUs/c3lwxWGetkxIwxRuTNiL9VroAVQxUiE41noL2NS26x7tR/209zD+YkdySLDYyrmSo+lgRwD/OX9J4Z+IOSvtLJTrCaGO1AjH/+7wAXO67jNDyUGx6cxNmfp2RPmAWuEf64aQHtoZtxdjYmJMPlwDsereX3HC05ihqH9TiYs9FpLalQmPUSLrtv9nx+K/HAuCb74udl3Zi2D4sa1O/TEl2Cj4vgMliwp639kgWWtsXzy3z4xKgubNZDvG6MZr4G/HQRGqkFx798UgcUQkNCThQdsDhXAHI6s5CRmcG0j5Nw8GKg09KWZTr5MclQNn1MjnEWsZ8FCO1tc5asfDngsMRxb4Ynx9/ao0ABA56J0iiP1x1WLKZkpni5MclQPmNcgFgc+0u2C01Zm2XOqLYB8uhCMCoeU7/th5HPjiyfgBzl1kAMm9nIuxamETCdC6PlhlaXhYCMOq9hXsR/G4wQkpDxFZ2YbaTH5cAI+MjcPdzh7HaKNeLxgJLApH0SdJTEJwBLBGvHrOhALB5uZ+Z88n2EYBGc6OTH5cAlP/xxWuY7CVloLGA4gB5nm467Wg6AjDV0R9Gy71nmQgQWxcrkRNEG6XFtvBtsFqtTj5WBGi+9eQmsKEYOZuKAHwSghETgHUmXGRtpAwqrnNKhleGO6I/n39edRquCEBFp0RD84pGhhCjMbxnkMioC10X5K4TiOIay8ERTGimX/OyBiHxIbBYLKr2VwUYHR/Flle3wDPBU2ZCYnOiGFZEqKXfKZaDvaOL0ME72BtNzU2Ynp5Wtb8qANXe2w6vIC/JBNPKKRd3PU6ul+KU64Rh6nfk7oAmSCN/4cVlxaojWNGaACjbkA0RiRFST2bDr8hPIk1e/LNhVnjvt+dshy5GJ3v2v74fLa0tmJiYULWnaM0A1NzcHEy1JhhOGGSw0NFy+Rp9ZeAMDg5iZmZG1c5SrQtA0ezsLO5b7qO6vhrp+ek4e+ksSt4vQUdnB2w225ocK/pHAP+mngP8NwD49uxkwt9dJL2khKxGlQAAAABJRU5ErkJggg==&amp;#34;/&amp;gt;
+            &amp;lt;/label&amp;gt;
+          &amp;lt;/div&amp;gt;
+          
+          &amp;lt;div class=&amp;#34;field&amp;#34;&amp;gt;
+            &amp;lt;input type=&amp;#34;radio&amp;#34; name=&amp;#34;input_7126ca244ac54c45ae5552615763db99_2_1&amp;#34; id=&amp;#34;input_7126ca244ac54c45ae5552615763db99_2_1_choice_1&amp;#34; class=&amp;#34;field-input input-radio submitted&amp;#34; value=&amp;#34;choice_1&amp;#34; checked=&amp;#34;true&amp;#34;/&amp;gt;&amp;lt;label id=&amp;#34;7126ca244ac54c45ae5552615763db99_2_1-choice_1-label&amp;#34; for=&amp;#34;input_7126ca244ac54c45ae5552615763db99_2_1_choice_1&amp;#34; class=&amp;#34;response-label field-label label-inline choicegroup_correct&amp;#34; aria-describedby=&amp;#34;status_7126ca244ac54c45ae5552615763db99_2_1&amp;#34;&amp;gt; &amp;lt;image alt=&amp;#34;play1&amp;#34; src=&amp;#34;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAYAAABNChwpAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQSSURBVFhH7ZZtTJNnFIb5sV/SijSAhvDHpGiiIcQYRZlMhQhqLSKinY0aDFNmYwwoqwVN5COzlURqdUjrSxixOMZwHXQpH8OKzs01gmLmBhRrRlhbG1uauBm2qMs9z5OUdLQvGjFxW2xypUnT3uc653nOm0bg+cvv978RDAYD3gr8twS8Pi9sd2zgLnGo0leh/st69N/tD/vdl+GlBHw+H4buDUGlVWGZYhkEMgGEe4SIKoyCcJcQgjwBknYlQXNeg5H7I+z74XLC8UIBt8cNU48J0mIpEsoSUNxRjE5HJ+zjdjh/c2LINwTziBk7v9iJ+EPxkCll6LrWBa/XGzZvKtMKUCft1nYsKVyCtfq1sNyzsIJTIZkBzwAMtwxYULUAK/aswI2bN8JmTmVagWHHMLKLs7HyzErW9damrRBXilHbV8u6ps+673fj8i+XcWX0CqNhoAGiIhGyFdlwu91hc4OZVuD0hdMQHRKx0NbBVsxTzWPdkghJnfj2BLjbHBrvNDKaf2qGadiEY9ZjmJU+C+qz6rC5wfAKPPQ+xCL5ImRxWSxc+4MWcco4TDydgP8PP+t6ff16yD6T4aDlIKq/r4bOpkNdfx07irlH5mLx5sWw2+0h2cHwCvT92IfITZFQfaNi4dRVTEkMnv31jEEij588ZnI0kR3NO7C7dTfKe8vZZNL16YhJi4GxxRiSHQyvgNFsZOul+U6DwrZCFJgKEHUgalIgAEmQDB1FSVcJ5J/LIW2UQvKpBNHvRqNUXRqSHQyvANfKMQFltxIpuhQsPbUUgu2CEIEAJOH+3c26X31uNTY2bMSc1DkoKi8KyQ6GV4DWLzInEvvb92PVJ6uQdDKJV+DRn4/gm/Ch6W4TuxckQNAEKk9VhmQHwysw+usoRFIRci7ksJGyCTx/AlJB6pagwvQwosI0+jV1a5B6NhUZhgzMPz4f8enxsHRaQrKD4RUg8pR5EFeIsfervayj2ftmMwE6d1pHKpx/KR+ZXCZbS5oUXT6CprdFsYVtQcQ7EYxwNaYV6LjagYX5CyFpkGDbxW1Irk6GzWVDy88t7FLmGnOZWFptGoM6pyOI/SgWYqkYbV+3TRZ/JQHXAxcqzlUgdl8s65TWjCAZ6jrQLRVed34du3iJlYmIzoqG+owaY2NjMxMg7A475EfkEGYI2RnTVpAAFSMJeqd7QtBzQvieEIqjCgwODk5mzEiAcLld0NRpkChJRFxBHNsI6pguJ519wtEEiDaLkJybDK1ey859fHx88vczFiAo0HrdirKaMmz4cANS3k9hBZdvX47MDzJx+OPDMHea4XQ6/1GceC0CATweD3qv90LH6VCqKUWNvgY91h44HA7e/wCvVeBVeKMCgeJ8Ev9/gRfxVuBfIGDA38ewhDy7IEMTAAAAAElFTkSuQmCC&amp;#34;/&amp;gt;
+            &amp;lt;/label&amp;gt;
+          &amp;lt;/div&amp;gt;
+        &amp;lt;span id=&amp;#34;answer_7126ca244ac54c45ae5552615763db99_2_1&amp;#34;/&amp;gt;
+    &amp;lt;/fieldset&amp;gt;
+    &amp;lt;div class=&amp;#34;indicator-container&amp;#34;&amp;gt;
+          
+
+&amp;lt;span class=&amp;#34;status correct&amp;#34; id=&amp;#34;status_7126ca244ac54c45ae5552615763db99_2_1&amp;#34; data-tooltip=&amp;#34;This answer is correct.&amp;#34;&amp;gt;
+  &amp;lt;span class=&amp;#34;sr&amp;#34;&amp;gt;correct&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;#34;status-icon&amp;#34; aria-hidden=&amp;#34;true&amp;#34;/&amp;gt;
+&amp;lt;/span&amp;gt;
+
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+  &amp;lt;div class=&amp;#34;action&amp;#34;&amp;gt;
+    &amp;lt;input type=&amp;#34;hidden&amp;#34; name=&amp;#34;problem_id&amp;#34; value=&amp;#34;Debug - step into&amp;#34; /&amp;gt;
+
+    &amp;lt;div class=&amp;#34;problem-action-buttons-wrapper&amp;#34;&amp;gt;
+    &amp;lt;/div&amp;gt;
+    &amp;lt;div class=&amp;#34;submit-attempt-container&amp;#34;&amp;gt;
+      &amp;lt;button type=&amp;#34;button&amp;#34; class=&amp;#34;submit btn-brand&amp;#34; data-submitting=&amp;#34;Đang gửi&amp;#34; data-value=&amp;#34;Gửi&amp;#34; data-should-enable-submit-button=&amp;#34;True&amp;#34; aria-describedby=&amp;#34;submission_feedback_7126ca244ac54c45ae5552615763db99&amp;#34; &amp;gt;
+          &amp;lt;span class=&amp;#34;submit-label&amp;#34;&amp;gt;Gửi&amp;lt;/span&amp;gt;
+      &amp;lt;/button&amp;gt;
+
+      &amp;lt;div class=&amp;#34;submission-feedback&amp;#34; id=&amp;#34;submission_feedback_7126ca244ac54c45ae5552615763db99&amp;#34;&amp;gt;
+        &amp;lt;span class=&amp;#34;sr&amp;#34;&amp;gt;Một số câu hỏi có các tùy chọn như lưu, đặt lại, gợi ý hoặc hiển thị câu trả lời. Các tùy chọn này nằm sau nút Gửi.&amp;lt;/span&amp;gt;
+      &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/div&amp;gt;
+    
+
+
+&amp;lt;div class=&amp;#34;notification warning notification-gentle-alert
+      is-hidden&amp;#34;
+     tabindex=&amp;#34;-1&amp;#34;&amp;gt;
+    &amp;lt;span class=&amp;#34;icon fa fa-exclamation-circle&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;
+    &amp;lt;span class=&amp;#34;notification-message&amp;#34; aria-describedby=&amp;#34;7126ca244ac54c45ae5552615763db99-problem-title&amp;#34;&amp;gt;
+    &amp;lt;/span&amp;gt;
+    &amp;lt;div class=&amp;#34;notification-btn-wrapper&amp;#34;&amp;gt;
+        &amp;lt;button type=&amp;#34;button&amp;#34; class=&amp;#34;btn btn-default btn-small notification-btn review-btn sr&amp;#34;&amp;gt;Xem lại&amp;lt;/button&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+    
+
+
+&amp;lt;div class=&amp;#34;notification warning notification-save
+      is-hidden&amp;#34;
+     tabindex=&amp;#34;-1&amp;#34;&amp;gt;
+    &amp;lt;span class=&amp;#34;icon fa fa-save&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;
+    &amp;lt;span class=&amp;#34;notification-message&amp;#34; aria-describedby=&amp;#34;7126ca244ac54c45ae5552615763db99-problem-title&amp;#34;&amp;gt;None
+    &amp;lt;/span&amp;gt;
+    &amp;lt;div class=&amp;#34;notification-btn-wrapper&amp;#34;&amp;gt;
+        &amp;lt;button type=&amp;#34;button&amp;#34; class=&amp;#34;btn btn-default btn-small notification-btn review-btn sr&amp;#34;&amp;gt;Xem lại&amp;lt;/button&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+    
+    
+
+
+&amp;lt;div class=&amp;#34;notification general notification-show-answer
+      is-hidden&amp;#34;
+     tabindex=&amp;#34;-1&amp;#34;&amp;gt;
+    &amp;lt;span class=&amp;#34;icon fa fa-info-circle&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;
+    &amp;lt;span class=&amp;#34;notification-message&amp;#34; aria-describedby=&amp;#34;7126ca244ac54c45ae5552615763db99-problem-title&amp;#34;&amp;gt;Câu trả lời được đánh dấu trong các câu hỏi
+    &amp;lt;/span&amp;gt;
+    &amp;lt;div class=&amp;#34;notification-btn-wrapper&amp;#34;&amp;gt;
+        &amp;lt;button type=&amp;#34;button&amp;#34; class=&amp;#34;btn btn-default btn-small notification-btn review-btn sr&amp;#34;&amp;gt;Xem lại&amp;lt;/button&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;/div&amp;gt;
+
+&amp;lt;script&amp;gt;
+    function emit_event(message) {
+        parent.postMessage(message, &amp;#39;*&amp;#39;);
+    }
+&amp;lt;/script&amp;gt;
+"
+     data-graded="False"&gt;
+    &lt;p class="loading-spinner"&gt;
+        &lt;i class="fa fa-spinner fa-pulse fa-2x fa-fw"&gt;&lt;/i&gt;
+        &lt;span class="sr"&gt;Loading&amp;hellip;&lt;/span&gt;
+    &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+    &lt;/div&gt;
+    &lt;div class="vert vert-3" data-id="block-v1:SoICT+IT3030+2020-2+type@problem+block@ec3b5ec828a8426388442943727b85ca"&gt;
+        
+&lt;div class="xblock xblock-student_view xblock-student_view-problem xmodule_display xmodule_ProblemBlock" data-course-id="course-v1:SoICT+IT3030+2020-2" data-init="XBlockToXModuleShim" data-runtime-class="LmsRuntime" data-runtime-version="1" data-block-type="problem" data-usage-id="block-v1:SoICT+IT3030+2020-2+type@problem+block@ec3b5ec828a8426388442943727b85ca" data-request-token="63d1e46a945511ef8a3323219c7798f4" data-graded="False" data-has-score="True"&gt;
+  &lt;script type="json/xblock-args" class="xblock-json-init-args"&gt;
+    {"xmodule-type": "Problem"}
+  &lt;/script&gt;
+  &lt;div id="problem_ec3b5ec828a8426388442943727b85ca" class="problems-wrapper" role="group"
+     aria-labelledby="ec3b5ec828a8426388442943727b85ca-problem-title"
+     data-problem-id="block-v1:SoICT+IT3030+2020-2+type@problem+block@ec3b5ec828a8426388442943727b85ca" data-url="/courses/course-v1:SoICT+IT3030+2020-2/xblock/block-v1:SoICT+IT3030+2020-2+type@problem+block@ec3b5ec828a8426388442943727b85ca/handler/xmodule_handler"
+     data-problem-score="1"
+     data-problem-total-possible="1"
+     data-attempts-used="2"
+     data-content="
+
+
+
+&amp;lt;h3 class=&amp;#34;hd hd-3 problem-header&amp;#34; id=&amp;#34;ec3b5ec828a8426388442943727b85ca-problem-title&amp;#34; aria-describedby=&amp;#34;block-v1:SoICT+IT3030+2020-2+type@problem+block@ec3b5ec828a8426388442943727b85ca-problem-progress&amp;#34; tabindex=&amp;#34;-1&amp;#34;&amp;gt;
+  Debug - step back
+&amp;lt;/h3&amp;gt;
+
+&amp;lt;div class=&amp;#34;problem-progress&amp;#34; id=&amp;#34;block-v1:SoICT+IT3030+2020-2+type@problem+block@ec3b5ec828a8426388442943727b85ca-problem-progress&amp;#34;&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;div class=&amp;#34;problem&amp;#34;&amp;gt;
+  &amp;lt;div&amp;gt;
+&amp;lt;div class=&amp;#34;wrapper-problem-response&amp;#34; tabindex=&amp;#34;-1&amp;#34; aria-label=&amp;#34;Question 1&amp;#34; role=&amp;#34;group&amp;#34;&amp;gt;&amp;lt;p&amp;gt;Trong ph&amp;amp;#7847;n m&amp;amp;#7875;m RARS, bi&amp;amp;#7875;u t&amp;amp;#432;&amp;amp;#7907;ng n&amp;amp;#224;o c&amp;amp;#243; &amp;amp;#253; ngh&amp;amp;#297;a l&amp;amp;#224; &amp;#34;quay tr&amp;amp;#7903; l&amp;amp;#7841;i tr&amp;amp;#7841;ng th&amp;amp;#225;i tr&amp;amp;#432;&amp;amp;#7899;c khi th&amp;amp;#7921;c hi&amp;amp;#7879;n l&amp;amp;#7879;nh v&amp;amp;#7915;a xong&amp;#34;?&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;#34;choicegroup capa_inputtype&amp;#34; id=&amp;#34;inputtype_ec3b5ec828a8426388442943727b85ca_2_1&amp;#34;&amp;gt;
+    &amp;lt;fieldset aria-describedby=&amp;#34;status_ec3b5ec828a8426388442943727b85ca_2_1&amp;#34;&amp;gt;
+          
+          &amp;lt;div class=&amp;#34;field&amp;#34;&amp;gt;
+            &amp;lt;input type=&amp;#34;radio&amp;#34; name=&amp;#34;input_ec3b5ec828a8426388442943727b85ca_2_1&amp;#34; id=&amp;#34;input_ec3b5ec828a8426388442943727b85ca_2_1_choice_1&amp;#34; class=&amp;#34;field-input input-radio&amp;#34; value=&amp;#34;choice_1&amp;#34;/&amp;gt;&amp;lt;label id=&amp;#34;ec3b5ec828a8426388442943727b85ca_2_1-choice_1-label&amp;#34; for=&amp;#34;input_ec3b5ec828a8426388442943727b85ca_2_1_choice_1&amp;#34; class=&amp;#34;response-label field-label label-inline&amp;#34; aria-describedby=&amp;#34;status_ec3b5ec828a8426388442943727b85ca_2_1&amp;#34;&amp;gt; &amp;lt;image alt=&amp;#34;play1&amp;#34; src=&amp;#34;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAYAAABNChwpAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQSSURBVFhH7ZZtTJNnFIb5sV/SijSAhvDHpGiiIcQYRZlMhQhqLSKinY0aDFNmYwwoqwVN5COzlURqdUjrSxixOMZwHXQpH8OKzs01gmLmBhRrRlhbG1uauBm2qMs9z5OUdLQvGjFxW2xypUnT3uc653nOm0bg+cvv978RDAYD3gr8twS8Pi9sd2zgLnGo0leh/st69N/tD/vdl+GlBHw+H4buDUGlVWGZYhkEMgGEe4SIKoyCcJcQgjwBknYlQXNeg5H7I+z74XLC8UIBt8cNU48J0mIpEsoSUNxRjE5HJ+zjdjh/c2LINwTziBk7v9iJ+EPxkCll6LrWBa/XGzZvKtMKUCft1nYsKVyCtfq1sNyzsIJTIZkBzwAMtwxYULUAK/aswI2bN8JmTmVagWHHMLKLs7HyzErW9damrRBXilHbV8u6ps+673fj8i+XcWX0CqNhoAGiIhGyFdlwu91hc4OZVuD0hdMQHRKx0NbBVsxTzWPdkghJnfj2BLjbHBrvNDKaf2qGadiEY9ZjmJU+C+qz6rC5wfAKPPQ+xCL5ImRxWSxc+4MWcco4TDydgP8PP+t6ff16yD6T4aDlIKq/r4bOpkNdfx07irlH5mLx5sWw2+0h2cHwCvT92IfITZFQfaNi4dRVTEkMnv31jEEij588ZnI0kR3NO7C7dTfKe8vZZNL16YhJi4GxxRiSHQyvgNFsZOul+U6DwrZCFJgKEHUgalIgAEmQDB1FSVcJ5J/LIW2UQvKpBNHvRqNUXRqSHQyvANfKMQFltxIpuhQsPbUUgu2CEIEAJOH+3c26X31uNTY2bMSc1DkoKi8KyQ6GV4DWLzInEvvb92PVJ6uQdDKJV+DRn4/gm/Ch6W4TuxckQNAEKk9VhmQHwysw+usoRFIRci7ksJGyCTx/AlJB6pagwvQwosI0+jV1a5B6NhUZhgzMPz4f8enxsHRaQrKD4RUg8pR5EFeIsfervayj2ftmMwE6d1pHKpx/KR+ZXCZbS5oUXT6CprdFsYVtQcQ7EYxwNaYV6LjagYX5CyFpkGDbxW1Irk6GzWVDy88t7FLmGnOZWFptGoM6pyOI/SgWYqkYbV+3TRZ/JQHXAxcqzlUgdl8s65TWjCAZ6jrQLRVed34du3iJlYmIzoqG+owaY2NjMxMg7A475EfkEGYI2RnTVpAAFSMJeqd7QtBzQvieEIqjCgwODk5mzEiAcLld0NRpkChJRFxBHNsI6pguJ519wtEEiDaLkJybDK1ey859fHx88vczFiAo0HrdirKaMmz4cANS3k9hBZdvX47MDzJx+OPDMHea4XQ6/1GceC0CATweD3qv90LH6VCqKUWNvgY91h44HA7e/wCvVeBVeKMCgeJ8Ev9/gRfxVuBfIGDA38ewhDy7IEMTAAAAAElFTkSuQmCC&amp;#34;/&amp;gt;
+            &amp;lt;/label&amp;gt;
+          &amp;lt;/div&amp;gt;
+          
+          &amp;lt;div class=&amp;#34;field&amp;#34;&amp;gt;
+            &amp;lt;input type=&amp;#34;radio&amp;#34; name=&amp;#34;input_ec3b5ec828a8426388442943727b85ca_2_1&amp;#34; id=&amp;#34;input_ec3b5ec828a8426388442943727b85ca_2_1_choice_0&amp;#34; class=&amp;#34;field-input input-radio&amp;#34; value=&amp;#34;choice_0&amp;#34;/&amp;gt;&amp;lt;label id=&amp;#34;ec3b5ec828a8426388442943727b85ca_2_1-choice_0-label&amp;#34; for=&amp;#34;input_ec3b5ec828a8426388442943727b85ca_2_1_choice_0&amp;#34; class=&amp;#34;response-label field-label label-inline&amp;#34; aria-describedby=&amp;#34;status_ec3b5ec828a8426388442943727b85ca_2_1&amp;#34;&amp;gt; &amp;lt;image alt=&amp;#34;play&amp;#34; src=&amp;#34;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAdCAYAAABSZrcyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATXSURBVEhLxZVZTFRnFMd9E5gFSDEh9s02ig88uJUOmwqRUihKrZZAKZWgWAMSS6laApFWpChYgpQCwSIqlrIUkVWMIKCsFocgCiPQIiCbgCCIFDD/zjn2kpnhQu3TTPLLDJfvnt93zvmWFQNj09AHoWdSsGJ44iX0ActHJ2egD1g+8WIW/4fWrk7kV5YgKi0GkanRuFKSA6WqTXTscrB8amYOb0LMxTg4+u/Ayi0rGYP3DWCoMFz4e53bOoQlnBB9VwyWz8zOYzmeDA3ik+A9LNgQswFxdXGo6a1B3/M+jEyP8O+EhgT+H42x87FHq7oSYrE0Yfnc/CssRVVTNYxtjCH7SIb05nSWESTWRHieei8V8r1ySBVSZBZkicYUYDmW+IyOj2L1B6thFmIG1aiKaRpoYhr7GxcQnikHlTyGvk2/MoWpnSmULcp/oy3+LJu55zFPSJ2kXNaK7gpsOrsJUi8pQm+GIl+Vv0BxRzFKO0tR1lXG0Ni89jzInGWw9bbDs/EJ0fhL9ryoupT7F1UdxcEyWzNhHGSMsZdjCCoOgvlxcxzMP4g0ZRpDLSFoXNaDLBQ8KkBgUSDH+C7+5KL4BMvFVqL1FzZcuts9t5H0RxLi6+NhcsQE86/meQLTc9MIKAzAqm9W4cDVA7wIaUzi3USkNKVw77n/++VY8+E76B8aWeRgue7++/NJPwzeM8Duy7uRcT8DkVWRiLgVAeMAY5YLTMxMYGp2Cvty9/Ek6JvGRt+JRmxtLE+CWkXZl1ZUaDkIlo9N/g1NrlXd4BcoGwp0tOwogkuDIfeXa8kFqBI0kb1X9vIkfH/3RVh5GEKuh8AlzeV1+xJitRwEy3XP3OTcdH6Beufxqwfjne0Nma9MVC5AW40mQXK7RDvO2i3djasY9H2IloNgue5tk5TzWk4LaWPsRlietoTFKQsYuRqJSjWhtUCV8MnxgeKcAjsv7mT54YgQLQfB8t6RF9Aku/w6y6nPzuedFyYgcZeICgnKmMSVjyu55I4pjtj681ZsS9rGscLP/qDlIFjePTwFTZq7emFoZQj3S+68kjf/uJlLKPl4sVyQ0llAUtcLrpyx7U+2cEp1wtqTa1mecbVQy0GwvGtwErps8VLANNCUS0+BrBOsId0jXZDSKqdvOtloUdLOICmNo35TxvSM3lnj8i5qlO2LHCx/1P8culwqKeQZU+9oP1NAWsmCvGW4hfe0Z6YnCwmaJI1zSHbgCghZf33qBJo7BhY5WN7WNwEx3A5/Csl2CR8elAX1kU4wkvrl+XF2JBMyJSmVWkBiL4H1Z9tRVtMsGp/lD3rGIUbdw26YO7wNEz8T3vOHrh3ifasp0IVWN20v2S4Z3rI3Q1pWAZSdQ6LxWd7S/QxLcbn0BkzUtxNVgEpJlwrteZIIQnpOlfH6zQvro9bDyE4CubVcfaYnoPb+Y9G4BMuVf41hOcrvqbBj/y7uH1XBKt6KT7NA9cUhVIPOAZmHjMfYfO6IX7KLcKe1RzSeAMubukbxX9zteIrIlGQo1D2kQ4Mkuli4WcL3+BH1jdiMBtWgaBxNWN7YMYI3pb59CLk3G3D6fDq+jPgW/uHHEB5/Dml56ru8vh21bQOi74nB8jrVU+gDlte0DUMfsLz64RD0ActvtQ5CH4SeScE/qnBFyTVgRAgAAAAASUVORK5CYII=&amp;#34;/&amp;gt;
+            &amp;lt;/label&amp;gt;
+          &amp;lt;/div&amp;gt;
+          
+          &amp;lt;div class=&amp;#34;field&amp;#34;&amp;gt;
+            &amp;lt;input type=&amp;#34;radio&amp;#34; name=&amp;#34;input_ec3b5ec828a8426388442943727b85ca_2_1&amp;#34; id=&amp;#34;input_ec3b5ec828a8426388442943727b85ca_2_1_choice_2&amp;#34; class=&amp;#34;field-input input-radio submitted&amp;#34; value=&amp;#34;choice_2&amp;#34; checked=&amp;#34;true&amp;#34;/&amp;gt;&amp;lt;label id=&amp;#34;ec3b5ec828a8426388442943727b85ca_2_1-choice_2-label&amp;#34; for=&amp;#34;input_ec3b5ec828a8426388442943727b85ca_2_1_choice_2&amp;#34; class=&amp;#34;response-label field-label label-inline choicegroup_correct&amp;#34; aria-describedby=&amp;#34;status_ec3b5ec828a8426388442943727b85ca_2_1&amp;#34;&amp;gt; &amp;lt;image alt=&amp;#34;back1&amp;#34; src=&amp;#34;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAeCAYAAADQBxWhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARrSURBVEhL5dT7T5NXHMfx/by/YSbOuSVbZrKZzSxzDofo8I7bHCK7iUaNlzkjETUTdHPGy0Qd4igWS7FDQgWp0HHRishFrVykKlApKFAK2AI66b1P33ueTgg6h9RNs8STfPIk7TnfV789zzkv9PX18Swjk8l4ztBjRdVPNf+IDv9ipNRea0OZV8eetErST9ahr7+F1db7yLlSngi1iQWbWztJTK9k2vJs3onOYsqSbMKWn+DDGDWTvsgi4jsNCYfKaDJ1BuYPXx80arXZOF3RwLKEAuauz+eXHCM1rQN09nu56xDovuvF0G5HVXKTyM3FRG8q4JSuga5u61CNoNGLNU3MXKVmyY9llBp66RCxrju+AGq+H8sdKT7qbw2QkHqZ2d9qKDjXONRxUKjFYmHRBjUz12nRXfuDqxYP9WYPVzrc1La7qWlzUS2m5GovyxJ17Ndcp/aWk7hDeqLj8jG2WAJ1gkJ/PlLCuDkKlOV9lLd40BndnGkSkQYnRdccqPV9xKbpSdbU0T/g5NMdRZw3uTnbMMCc9VqSM/WBOqNGjTdamBSlJGxTFXkGD7lX3KjrXGTqB0g5e5u9mmb2ZFfT0tmPx+fD7/czf3sJ2bVOTje52Xr0OlPEl+y21TZ6NPNkGWPDU4lJ6yLtogdZhYOd+V3s0bRyIM9AtbELnyAgCH4GR3h8Mb+WOzh22UVqaT9vLvyNGvF4jRpN2K9hzHQZX6ocfJ3pZEteH6qyNi41WgKQBD48QsS3d6vWTnyhk4xLTt6OyiJLaxg9Grc7l5dmpBB5zMMsuYuMagf3nN4HOnt4vLq6kJCke4QetpNY6mLi4izx8qgdPbrrcH6g0wXye4TLPcQVOagyu7B7/eIe/r1Laby8soh3EweYnuJkR6GdCZHH0YpH57FoT08PBoOBwtMVvDZXTsg2I3MUPqameJincLL7vIML4pG54xJwe4XACyRFGuNWFTM5yUl0ppuNxy1MEPe0zdwzMtrRYebFsfMCMRqNLI7NZnzkSSLkdsLTBEJlXqYedvO5ykVipZOqDg82uw+v+JdL7OsbKvj4iJfNBS6itlcSs/X3ADIiOghKkTo+VVTJxEgl78VeZoHSx8yjfmbIfYSlepkhFo854eZglZuLnR5u9gt8dNDGUrXAxvRWwlbkUFzeGBwqfdbe3s6+VC3jF6iYvuMGC1UCsxX+AB5+P/OVAjE5Ams0Ams1fn7IsxGy4hS75OVYum4/HpWew1EpjU3NrP8plzHhaUyOvcBX4n5FHYeIDJil+Ou59ATsLPWzJtXEK+INtjRey42WzqEaQaO9vb3i7WQiKb2E96OVvLFITej3dUQld7BaZWOlwkLk3gY+WJHPW5+ls+/oObHDnqH1UoJGpUiw2WxGe6aaLYmFRKzNYuo3GYEfEbpExSfr1Gw/pKO06npg7vC1Up4IHYzVasVkMqEr05OkKGbbgQKSM3SUVdXT3f1gd8Pzr9AnzYjoIPhfw/8/9GnmkeizzPOEyvgTTPaGIkRXsRsAAAAASUVORK5CYII=&amp;#34;/&amp;gt;
+            &amp;lt;/label&amp;gt;
+          &amp;lt;/div&amp;gt;
+          
+          &amp;lt;div class=&amp;#34;field&amp;#34;&amp;gt;
+            &amp;lt;input type=&amp;#34;radio&amp;#34; name=&amp;#34;input_ec3b5ec828a8426388442943727b85ca_2_1&amp;#34; id=&amp;#34;input_ec3b5ec828a8426388442943727b85ca_2_1_choice_3&amp;#34; class=&amp;#34;field-input input-radio&amp;#34; value=&amp;#34;choice_3&amp;#34;/&amp;gt;&amp;lt;label id=&amp;#34;ec3b5ec828a8426388442943727b85ca_2_1-choice_3-label&amp;#34; for=&amp;#34;input_ec3b5ec828a8426388442943727b85ca_2_1_choice_3&amp;#34; class=&amp;#34;response-label field-label label-inline&amp;#34; aria-describedby=&amp;#34;status_ec3b5ec828a8426388442943727b85ca_2_1&amp;#34;&amp;gt; &amp;lt;image alt=&amp;#34;reset&amp;#34; src=&amp;#34;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAYAAACGVs+MAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAR2SURBVFhH7ZV9SNR3HMf3X8rdmYIQ0V9BSBH+0cOmZzrdtUSy8kidWCINixCFnAgrsRBN03KG082dNnXq5izy4aY4Z5pa7qG8OenGdvMBH0InugO35sbWeM/3J36Heb/zYQzaoIP3/e6+9/1+Pq/Pw/dzL2DxZbfbn4lMJhOeA/w/AQa/G0RDRwNyynKQVZqFGnMN+h/0q+5dSesGyLuWB8NJAza8uEHk5u8Gd72747vPIR+cKzynelZNawYYGh2C8YxRnOy6sgtXv7iKvsk+PPz5IeYW5uRz8VfF8hv37Du+D/0Dq2dkTQBtvW3wCPCA7pAOVd9UiUOKzpdKWS//uhwe0R7Q6rWorK9UtaloVYCRsRFsDt0M7zRv2H6yiSzTFtG9qXsOKWsDPw7IHj693vCCZ6Aneu72qNqmVgWISo2CNlQrKe4a60L7SDvahtvQZGvCsY+PyZNqHWqV9aIvi5B3N0/2NnzfAF2YDvpYPSYnJ1Xtrwhw87ObUs/c3lwxWGetkxIwxRuTNiL9VroAVQxUiE41noL2NS26x7tR/209zD+YkdySLDYyrmSo+lgRwD/OX9J4Z+IOSvtLJTrCaGO1AjH/+7wAXO67jNDyUGx6cxNmfp2RPmAWuEf64aQHtoZtxdjYmJMPlwDsereX3HC05ihqH9TiYs9FpLalQmPUSLrtv9nx+K/HAuCb74udl3Zi2D4sa1O/TEl2Cj4vgMliwp639kgWWtsXzy3z4xKgubNZDvG6MZr4G/HQRGqkFx798UgcUQkNCThQdsDhXAHI6s5CRmcG0j5Nw8GKg09KWZTr5MclQNn1MjnEWsZ8FCO1tc5asfDngsMRxb4Ynx9/ao0ABA56J0iiP1x1WLKZkpni5MclQPmNcgFgc+0u2C01Zm2XOqLYB8uhCMCoeU7/th5HPjiyfgBzl1kAMm9nIuxamETCdC6PlhlaXhYCMOq9hXsR/G4wQkpDxFZ2YbaTH5cAI+MjcPdzh7HaKNeLxgJLApH0SdJTEJwBLBGvHrOhALB5uZ+Z88n2EYBGc6OTH5cAlP/xxWuY7CVloLGA4gB5nm467Wg6AjDV0R9Gy71nmQgQWxcrkRNEG6XFtvBtsFqtTj5WBGi+9eQmsKEYOZuKAHwSghETgHUmXGRtpAwqrnNKhleGO6I/n39edRquCEBFp0RD84pGhhCjMbxnkMioC10X5K4TiOIay8ERTGimX/OyBiHxIbBYLKr2VwUYHR/Flle3wDPBU2ZCYnOiGFZEqKXfKZaDvaOL0ME72BtNzU2Ynp5Wtb8qANXe2w6vIC/JBNPKKRd3PU6ul+KU64Rh6nfk7oAmSCN/4cVlxaojWNGaACjbkA0RiRFST2bDr8hPIk1e/LNhVnjvt+dshy5GJ3v2v74fLa0tmJiYULWnaM0A1NzcHEy1JhhOGGSw0NFy+Rp9ZeAMDg5iZmZG1c5SrQtA0ezsLO5b7qO6vhrp+ek4e+ksSt4vQUdnB2w225ocK/pHAP+mngP8NwD49uxkwt9dJL2khKxGlQAAAABJRU5ErkJggg==&amp;#34;/&amp;gt;
+            &amp;lt;/label&amp;gt;
+          &amp;lt;/div&amp;gt;
+        &amp;lt;span id=&amp;#34;answer_ec3b5ec828a8426388442943727b85ca_2_1&amp;#34;/&amp;gt;
+    &amp;lt;/fieldset&amp;gt;
+    &amp;lt;div class=&amp;#34;indicator-container&amp;#34;&amp;gt;
+          
+
+&amp;lt;span class=&amp;#34;status correct&amp;#34; id=&amp;#34;status_ec3b5ec828a8426388442943727b85ca_2_1&amp;#34; data-tooltip=&amp;#34;This answer is correct.&amp;#34;&amp;gt;
+  &amp;lt;span class=&amp;#34;sr&amp;#34;&amp;gt;correct&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;#34;status-icon&amp;#34; aria-hidden=&amp;#34;true&amp;#34;/&amp;gt;
+&amp;lt;/span&amp;gt;
+
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+  &amp;lt;div class=&amp;#34;action&amp;#34;&amp;gt;
+    &amp;lt;input type=&amp;#34;hidden&amp;#34; name=&amp;#34;problem_id&amp;#34; value=&amp;#34;Debug - step back&amp;#34; /&amp;gt;
+
+    &amp;lt;div class=&amp;#34;problem-action-buttons-wrapper&amp;#34;&amp;gt;
+    &amp;lt;/div&amp;gt;
+    &amp;lt;div class=&amp;#34;submit-attempt-container&amp;#34;&amp;gt;
+      &amp;lt;button type=&amp;#34;button&amp;#34; class=&amp;#34;submit btn-brand&amp;#34; data-submitting=&amp;#34;Đang gửi&amp;#34; data-value=&amp;#34;Gửi&amp;#34; data-should-enable-submit-button=&amp;#34;True&amp;#34; aria-describedby=&amp;#34;submission_feedback_ec3b5ec828a8426388442943727b85ca&amp;#34; &amp;gt;
+          &amp;lt;span class=&amp;#34;submit-label&amp;#34;&amp;gt;Gửi&amp;lt;/span&amp;gt;
+      &amp;lt;/button&amp;gt;
+
+      &amp;lt;div class=&amp;#34;submission-feedback&amp;#34; id=&amp;#34;submission_feedback_ec3b5ec828a8426388442943727b85ca&amp;#34;&amp;gt;
+        &amp;lt;span class=&amp;#34;sr&amp;#34;&amp;gt;Một số câu hỏi có các tùy chọn như lưu, đặt lại, gợi ý hoặc hiển thị câu trả lời. Các tùy chọn này nằm sau nút Gửi.&amp;lt;/span&amp;gt;
+      &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/div&amp;gt;
+    
+
+
+&amp;lt;div class=&amp;#34;notification warning notification-gentle-alert
+      is-hidden&amp;#34;
+     tabindex=&amp;#34;-1&amp;#34;&amp;gt;
+    &amp;lt;span class=&amp;#34;icon fa fa-exclamation-circle&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;
+    &amp;lt;span class=&amp;#34;notification-message&amp;#34; aria-describedby=&amp;#34;ec3b5ec828a8426388442943727b85ca-problem-title&amp;#34;&amp;gt;
+    &amp;lt;/span&amp;gt;
+    &amp;lt;div class=&amp;#34;notification-btn-wrapper&amp;#34;&amp;gt;
+        &amp;lt;button type=&amp;#34;button&amp;#34; class=&amp;#34;btn btn-default btn-small notification-btn review-btn sr&amp;#34;&amp;gt;Xem lại&amp;lt;/button&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+    
+
+
+&amp;lt;div class=&amp;#34;notification warning notification-save
+      is-hidden&amp;#34;
+     tabindex=&amp;#34;-1&amp;#34;&amp;gt;
+    &amp;lt;span class=&amp;#34;icon fa fa-save&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;
+    &amp;lt;span class=&amp;#34;notification-message&amp;#34; aria-describedby=&amp;#34;ec3b5ec828a8426388442943727b85ca-problem-title&amp;#34;&amp;gt;None
+    &amp;lt;/span&amp;gt;
+    &amp;lt;div class=&amp;#34;notification-btn-wrapper&amp;#34;&amp;gt;
+        &amp;lt;button type=&amp;#34;button&amp;#34; class=&amp;#34;btn btn-default btn-small notification-btn review-btn sr&amp;#34;&amp;gt;Xem lại&amp;lt;/button&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+    
+    
+
+
+&amp;lt;div class=&amp;#34;notification general notification-show-answer
+      is-hidden&amp;#34;
+     tabindex=&amp;#34;-1&amp;#34;&amp;gt;
+    &amp;lt;span class=&amp;#34;icon fa fa-info-circle&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;
+    &amp;lt;span class=&amp;#34;notification-message&amp;#34; aria-describedby=&amp;#34;ec3b5ec828a8426388442943727b85ca-problem-title&amp;#34;&amp;gt;Câu trả lời được đánh dấu trong các câu hỏi
+    &amp;lt;/span&amp;gt;
+    &amp;lt;div class=&amp;#34;notification-btn-wrapper&amp;#34;&amp;gt;
+        &amp;lt;button type=&amp;#34;button&amp;#34; class=&amp;#34;btn btn-default btn-small notification-btn review-btn sr&amp;#34;&amp;gt;Xem lại&amp;lt;/button&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;/div&amp;gt;
+
+&amp;lt;script&amp;gt;
+    function emit_event(message) {
+        parent.postMessage(message, &amp;#39;*&amp;#39;);
+    }
+&amp;lt;/script&amp;gt;
+"
+     data-graded="False"&gt;
+    &lt;p class="loading-spinner"&gt;
+        &lt;i class="fa fa-spinner fa-pulse fa-2x fa-fw"&gt;&lt;/i&gt;
+        &lt;span class="sr"&gt;Loading&amp;hellip;&lt;/span&gt;
+    &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+  
+  &lt;script type="text/javascript"&gt;
+    (function (require) {
+        require(['/static/js/dateutil_factory.84670a6ecfae.js?raw'], function () {
+          require(['js/dateutil_factory'], function (DateUtilFactory) {
+            
+    DateUtilFactory.transform('.localized-datetime');
+
+          });
+        });
+    }).call(this, require || RequireJS.require);
+  &lt;/script&gt;
+
+
+&lt;script&gt;
+    function emit_event(message) {
+        parent.postMessage(message, '*');
+    }
+&lt;/script&gt;
+
+&lt;/div&gt;
+
+  </div>
+  <div id="seq_content" role="tabpanel" aria-labelledby="tab_1">
+    
+<div class="xblock xblock-student_view xblock-student_view-vertical xblock-initialized" data-course-id="course-v1:SoICT+IT3030+2020-2" data-init="VerticalStudentView" data-runtime-class="LmsRuntime" data-runtime-version="1" data-block-type="vertical" data-usage-id="block-v1:SoICT+IT3030+2020-2+type@vertical+block@78d9a03d5f874514a59b8f96587d192c" data-request-token="63d1e46a945511ef8a3323219c7798f4" data-graded="False" data-has-score="False">
+  
+
+
+
+
+
+  <h2 class="hd hd-2 unit-title">Công cụ giả lập RARS</h2>
+
+
+  
+
+
+
+<div class="bookmark-button-wrapper">
+  <button class="btn btn-link bookmark-button" aria-pressed="false" data-bookmark-id="20193237,block-v1:SoICT+IT3030+2020-2+type@vertical+block@78d9a03d5f874514a59b8f96587d192c" data-bookmarks-api-url="/api/bookmarks/v1/bookmarks/">
+     <span class="bookmark-text">Đánh dấu trang này</span>
+    </button>
+</div>
+
+
+
+<div class="vert-mod">
+    <div class="vert vert-0" data-id="block-v1:SoICT+IT3030+2020-2+type@html+block@09b62a8aeb7e4a31a6600fc540cacbda">
+        
+<div class="xblock xblock-student_view xblock-student_view-html xmodule_display xmodule_HtmlBlock xblock-initialized" data-course-id="course-v1:SoICT+IT3030+2020-2" data-init="XBlockToXModuleShim" data-runtime-class="LmsRuntime" data-runtime-version="1" data-block-type="html" data-usage-id="block-v1:SoICT+IT3030+2020-2+type@html+block@09b62a8aeb7e4a31a6600fc540cacbda" data-request-token="63d1e46a945511ef8a3323219c7798f4" data-graded="False" data-has-score="False">
+  
+  <p><iframe title="RARS" src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/RARS.vi.html" width="100%" height="600px" marginwidth="0" marginheight="0" frameborder="0" scrolling="yes">
+
+Your browser does not support IFrames.
+
+</iframe></p>
+</div>
+
+    </div>
+</div>
+
+
+  
+  <script type="text/javascript">
+    (function (require) {
+        require(['/static/js/dateutil_factory.84670a6ecfae.js?raw'], function () {
+          require(['js/dateutil_factory'], function (DateUtilFactory) {
+            
+    DateUtilFactory.transform('.localized-datetime');
+
+          });
+        });
+    }).call(this, require || RequireJS.require);
+  </script>
+
+
+<script>
+    function emit_event(message) {
+        parent.postMessage(message, '*');
+    }
+</script>
+
+</div>
+
+  </div>
+  </div>
+
+  <nav class="sequence-bottom" aria-label="Mục">
+    <button class="sequence-nav-button button-previous">
+      <span class="icon fa fa-chevron-prev" aria-hidden="true"></span>
+      <span>Trang trước</span>
+    </button>
+    <button class="sequence-nav-button button-next">
+      <span>Trang sau</span>
+      <span class="icon fa fa-chevron-next" aria-hidden="true"></span>
+    </button>
+  </nav>
+</div>
+
+</div>
+
+            <script>
+              $( window ).on( "load", function() {
+                if ($('.pdf_block').length > 0) {
+                  var text = $('.pdf_block p').html().replace("It appears you don't have a PDF plugin for this browser.\n  You can", "Bạn không có plugin PDF cho trình duyệt này.\n Bạn có thể");
+                  $('.pdf_block p').html(text);
+                  var textLink = $('.pdf_block p').html().replace("click here to\n  download the PDF file.", "nhấp vào đây để\n tải xuống tệp PDF.");
+                  $('.pdf_block p').html(textLink);
+                }
+              }
+            </script>
+        </main>
+    </section>
+
+    <section class="courseware-results-wrapper">
+      <div id="loading-message" aria-live="polite" aria-relevant="all"></div>
+      <div id="error-message" aria-live="polite"></div>
+      <div class="courseware-results search-results" data-course-id="course-v1:SoICT+IT3030+2020-2" data-lang-code="vi"></div>
+    </section>
+
+  </div>
+  
+
+
+
+
+
+
+
+
+
+    
+    
+    <script type="text/javascript" src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/CourseSock.207e89e610bb26d251c9.713b569749c9.js.tải xuống"></script>
+      <script type="text/javascript">
+        
+    new CourseSock({
+        el:'.verification-sock'
+    });
+
+      </script>
+
+
+</div>
+<div class="container-footer">
+</div>
+
+
+  
+  <script type="text/javascript">
+    (function (require) {
+        require(['/static/js/commerce/track_ecommerce_events.0a92c313c996.js?raw'], function () {
+          require(['js/commerce/track_ecommerce_events'], function (TrackECommerceEvents) {
+            
+
+  var fbeLink = $("#FBE_banner");
+  var welcomeLink = $("#welcome");
+  var accessDeniedUpsellLink = $("#accessDeniedUpsell");
+  var sockLink = $("#sock");
+
+  TrackECommerceEvents.trackUpsellClick(fbeLink, 'in_course_audit_access_expires', {
+      pageName: "in_course",
+      linkType: "link",
+      linkCategory: "FBE_banner"
+  });
+
+  TrackECommerceEvents.trackUpsellClick(welcomeLink, 'in_course_welcome', {
+      pageName: "in_course",
+      linkType: "link",
+      linkCategory: "welcome"
+  });
+
+  TrackECommerceEvents.trackUpsellClick(accessDeniedUpsellLink, 'in_course_upgrade', {
+    pageName: "in_course",
+    linkType: "link",
+    linkCategory: "(none)"
+  });
+
+  TrackECommerceEvents.trackUpsellClick(sockLink, 'in_course_sock', {
+      pageName: "in_course",
+      linkType: "button",
+      linkCategory: "green_upgrade"
+  });
+
+
+          });
+        });
+    }).call(this, require || RequireJS.require);
+  </script>
+
+
+      
+    </div>
+
+        
+
+
+
+
+
+
+
+<footer class="footer" id="footer-edx-v3" role="contentinfo" aria-label="Page Footer">
+
+<div class="container">
+    <div class="row main-row"><!-- row -->
+        <div class="footer__branch flex-column">
+            <div class="row">
+                <div class="col-12 column-2-2 column-styles">
+                <div class="edx-footer-logo">
+                    <a href="https://soict.daotao.ai/courses">
+                        <img alt="organization logo" src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/logo.f0b087adfa7e.svg">
+                    </a>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__info flex-column">
+             <div class="row full-height">
+                 <div class="col-xs-12 footer__about">
+                    <h2 class="heading">Liên Hệ</h2>
+                    <ul class="footer__about-list">
+                      <li class="footer__about-item">
+                        <img class="footer__icon" src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/ic-phone.6ac919b49585.svg" alt="phone">
+                        <!-- a class="footer__about-link" href="tel: (+84) 961567998">(+84) 961567998</a -->
+                      </li>
+                      <li class="footer__about-item">
+                        <img class="footer__icon" src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/ic-mail.54e6a39ebbb4.svg" alt="mail">
+                        <!--a class="footer__about-link" href="mailto:daotao.ai@hust.edu.vn">daotao.ai@hust.edu.vn</a-->
+                      </li>
+                      <li class="footer__about-item">
+                        <img class="footer__icon" src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/ic-map.8a68d36dc13f.svg" alt="map">
+                        <a class="footer__about-link">
+                          <span class="text-nowrap">EdTech Centre</span>, tầng 9 nhà B1 - <span class="text-nowrap">Đại học Bách khoa Hà Nội</span>
+                          <br>
+                          Số 1 Đại Cồ Việt - Hai Bà Trưng - <span class="text-nowrap">Hà Nội</span>
+                        </a>
+                      </li>
+                      <li class="footer__about-item">
+                        <img class="footer__icon" src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/ic-facebook.3eb4a484e5ec.svg" alt="facebook">
+                        <!-- a class="footer__about-link" href="https://www.facebook.com/edtechcentredaotaoai" target="&_blank">fb.com/edtechcentredaotaoai</a -->
+                      </li>
+                      <li class="footer__about-item">
+                        <img class="footer__icon" src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/ic-youtube.3e8a573e88fa.svg" alt="ic-youtube" style="width: 24px;">
+                        <!-- a class="footer__about-link" href="https://www.youtube.com/@daotaoai3701" target="&_blank">youtube.com/@daotaoai3701</a -->
+                      </li>
+                    </ul>
+                 </div>
+                 <!-- <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 column-2-1 second-div-border column-styles ">
+                        <div class="row full-height">
+                            <div class="col-lg-12 col-md-12 col-sm-10 column-2-2 full-height column-styles">
+                                  <h2 class="heading">Legal</h2>
+                                    <ul class="list-unstyled clear-margins  ">
+                                        <li>
+                                          <a href="/tos_and_honor">Điều khoản Dịch vụ &amp; Mã Danh dự</a>
+                                        </li>
+                                        <li>
+                                          <a href="/privacy">Chính sách bảo mật</a>
+                                        </li>
+                                    </ul>
+                            </div>
+                          </div>
+                </div>
+                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 column-2-1 third-div-border column-styles">
+                      <div class="row full-height">
+                        <div class="col-lg-12 col-md-12 col-sm-10 full-height column-2-2 column-styles">
+                              <h2 class="heading">Connect</h2>
+                              <ul class="list-unstyled clear-margins  ">
+                                <li>
+                                  <a href="/blog">Blog</a>
+                                </li>
+                                <li>
+                                  <a href="http://soict.daotao.ai/support/contact_us">Liên Hệ</a>
+                                </li>
+                              </ul>
+                        </div>
+                      </div>
+                 </div> -->
+
+
+
+
+
+            </div>
+        </div>
+        <div class="footer__quote flex-column">
+          <blockquote>Cùng kiến tạo tương lai số với những cơ sở giáo dục hàng đầu Việt Nam</blockquote>
+        </div>
+    </div>
+</div>
+<div class="body-mentions">
+  <div class="body-mentions__container">
+    <div class="body-mentions__poweredby">
+      Hệ thống được Trung tâm Công nghệ và giải pháp chuyển đổi số trong giáo dục <a href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3030+2020-2/courseware/10c334ac26b94d0e84eaf84fe2bd826f/cffa093ccd364107b3af0b2c1b4a8a85/" target="_blank" class="text-nowrap">(EdTech Centre)</a> xây dựng và vận hành
+    </div>
+  </div>
+</div>
+
+</footer>
+
+
+  
+
+    <link href="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/lms-footer-edx.a433f921981d.css" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+  </div>
+
+  
+  
+  <script type="text/javascript" src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/jquery.scrollTo.525edcc52fe8.js.tải xuống"></script>
+  <script type="text/javascript" src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/jquery.flot.d3d45ff0c6a8.js.tải xuống"></script>
+
+  
+    
+<script type="text/javascript" src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/lms-courseware.515d666a83a0.js.tải xuống" charset="utf-8"></script>
+
+
+  
+
+
+
+
+<script type="text/javascript">
+    // Fast Preview was introduced in 2.5. However, it
+    // causes undesirable flashing/font size changes when
+    // MathJax is used for interactive preview (equation editor).
+    // Setting processSectionDelay to 0 (see below) fully eliminates
+    // fast preview, but to reduce confusion, we are also setting
+    // the option as displayed in the context menu to false.
+    // When upgrading to 2.6, check if this variable name changed.
+    window.MathJax = {
+      menuSettings: {CHTMLpreview: false}
+    };
+</script>
+
+<script type="text/x-mathjax-config;executed=true">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [
+        ["\\(","\\)"],
+        ['[mathjaxinline]','[/mathjaxinline]']
+      ],
+      displayMath: [
+        ["\\[","\\]"],
+        ['[mathjax]','[/mathjax]']
+      ]
+    }
+  });
+</script>
+<script type="text/x-mathjax-config;executed=true">
+
+  // In order to eliminate all flashing during interactive
+  // preview, it is necessary to set processSectionDelay to 0
+  // (remove delay between input and output phases). This
+  // effectively disables fast preview, regardless of
+  // the fast preview setting as shown in the context menu.
+  MathJax.Hub.processSectionDelay = 0;
+
+  MathJax.Hub.signal.Interest(function(message) {
+    if(message[0] === "End Math") {
+        set_mathjax_display_div_settings();
+    }
+  });
+  function set_mathjax_display_div_settings() {
+    $('.MathJax_Display').each(function( index ) {
+      this.setAttribute('tabindex', '0');
+      this.setAttribute('aria-live', 'off');
+      this.removeAttribute('role');
+      this.removeAttribute('aria-readonly');
+    });
+  }
+</script>
+
+<script type="text/javascript">
+    // Activating Mathjax accessibility files
+    window.MathJax = {
+        menuSettings: {
+            collapsible: true,
+            autocollapse: false,
+            explorer: true
+        }
+    };
+</script>
+
+<!-- This must appear after all mathjax-config blocks, so it is after the imports from the other templates.
+     It can't be run through static.url because MathJax uses crazy url introspection to do lazy loading of
+     MathJax extension libraries -->
+<script type="text/javascript" src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/MathJax.js.tải xuống"></script>
+
+
+
+  
+    
+      <script type="text/javascript" src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/courseware_factory.1504fc10caef.js.tải xuống"></script>
+    <script type="text/javascript">
+        (function (require) {
+            require(['js/courseware/courseware_factory'], function (CoursewareFactory) {
+                
+    CoursewareFactory();
+  
+            });
+        }).call(this, require || RequireJS.require);
+    </script>
+
+
+
+  <script type="text/javascript">
+    var $$course_id = "course\u002Dv1:SoICT+IT3030+2020\u002D2";
+  </script>
+
+
+<script src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/HtmlBlockPreview.9e67aec9582b4dfef5ba.48e99e8692d8.js.tải xuống" type="application/javascript"></script>
+<script src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/XModuleShim.e03571529f8ee6f0ae6d.ecc178d1e5da.js.tải xuống" type="application/javascript"></script>
+<script src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/VerticalStudentView.a1cd89253468e510325d.45b232b5a166.js.tải xuống" type="application/javascript"></script>
+<script src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/ProblemBlockPreview.746e3738703667b418ef.325850ccd180.js.tải xuống" type="application/javascript"></script>
+<script src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/SequenceModule.78b6d7c66e02b8e62c93.09434990ddb4.js.tải xuống" type="application/javascript"></script>
+
+
+
+  
+
+
+
+  <script type="text/javascript" src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/noreferrer.aa62a3e70ffa.js.tải xuống" charset="utf-8"></script>
+  <script type="text/javascript" src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/navigation.08930e16ab3d.js.tải xuống" charset="utf-8"></script>
+  <script type="text/javascript" src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/header.309a1243e175.js.tải xuống"></script>
+  
+  <script type="text/javascript" src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/jquery_extend_patch.54dddef28d15.js.tải xuống"></script>
+  <script src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/popper.min.js.tải xuống"></script>
+  <script src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/bootstrap.bundle.min.js.tải xuống"></script>
+  <script src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/slick.min.js.tải xuống"></script>
+  <script type="text/javascript" src="./Công cụ giả lập RARS _ Bài tập thực hành 1 - Giới thiệu công cụ _ Chương trình học của IT3030 _ MOOC daotao.ai_files/main.5c1841392a89.js.tải xuống"></script>
+
+
+
+
+<div id="reader-feedback" class="sr" aria-live="polite"></div><div class="tooltip" style="display: none; opacity: 0;"></div></body><script src="chrome-extension://cjmkndjhnagcfbpiemnkdpomccnjblmj/scripts/arweave.js"></script><script src="chrome-extension://cjmkndjhnagcfbpiemnkdpomccnjblmj/scripts/solanaWeb3.js"></script><script src="chrome-extension://cjmkndjhnagcfbpiemnkdpomccnjblmj/scripts/declareConstantScript.js"></script><script src="chrome-extension://cjmkndjhnagcfbpiemnkdpomccnjblmj/scripts/eventEmitter.js"></script><script src="chrome-extension://cjmkndjhnagcfbpiemnkdpomccnjblmj/scripts/finnieRpcConnectionScript.js"></script><script src="chrome-extension://cjmkndjhnagcfbpiemnkdpomccnjblmj/scripts/finnieKoiiWalletProviderScript.js"></script><script src="chrome-extension://cjmkndjhnagcfbpiemnkdpomccnjblmj/scripts/finnieK2ProviderScript.js"></script><script src="chrome-extension://cjmkndjhnagcfbpiemnkdpomccnjblmj/scripts/mainScript.js"></script></html>
